@@ -1,0 +1,240 @@
+\hypertarget{class_vector}{}\section{Vector$<$ Typ, Dimension $>$ Class Template Reference}
+\label{class_vector}\index{Vector$<$ Typ, Dimension $>$@{Vector$<$ Typ, Dimension $>$}}
+
+
+Pojecie wektora w ukladzie wspolrzednych.  
+
+
+
+
+{\ttfamily \#include $<$vector.\+hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_vector_a0dff28c6575a4239e55d76c62e12f9c8}{Vector} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \hyperlink{class_vector}{Vector} object. \end{DoxyCompactList}\item 
+\hyperlink{class_vector_a474267f5ebbaf240b6e01e9f9a4008dc}{$\sim$\+Vector} ()
+\item 
+\hyperlink{class_vector_ac9bd98e42e721a38a9f92e6de1ac91ac}{Vector} (double x, double y, double z)
+\begin{DoxyCompactList}\small\item\em Konstruktor paramatryczny , podajemy wszystkie wspolrzedne wektora. \end{DoxyCompactList}\item 
+\hyperlink{class_vector_a839c68689534954133753f8bcc6f953d}{Vector} (const \hyperlink{class_vector}{Vector} \&vec)
+\begin{DoxyCompactList}\small\item\em Konstuktor kopiujacy. \end{DoxyCompactList}\item 
+Typ \& \hyperlink{class_vector_acfb4ddcc2287a4fcf158f559907ba378}{operator\mbox{[}$\,$\mbox{]}} (int Index)
+\begin{DoxyCompactList}\small\item\em Zapisanie wektora wspolrzednych. \end{DoxyCompactList}\item 
+Typ \hyperlink{class_vector_a0657574140fa760b6c624a284f7ba2b7}{operator\mbox{[}$\,$\mbox{]}} (int Index) const 
+\begin{DoxyCompactList}\small\item\em uzyskanie wartosci wspolrzeednej \end{DoxyCompactList}\item 
+\hyperlink{class_vector}{Vector} \hyperlink{class_vector_a279d70d4570db9c244fe9e2cb74e1214}{operator+=} (\hyperlink{class_vector}{Vector} vector2)
+\begin{DoxyCompactList}\small\item\em Dodawanie dwoch wektorow. \end{DoxyCompactList}\item 
+\hyperlink{class_vector}{Vector} \& \hyperlink{class_vector_a78da39dae1595a16bf12245bc29a9beb}{operator/} (double divorce)
+\begin{DoxyCompactList}\small\item\em Przeciazenie dzielenia szczegolne pomocne przy animacji. \end{DoxyCompactList}\item 
+\hyperlink{class_vector}{Vector} \hyperlink{class_vector_a71f655b6eee1e552655d381a85aa9719}{operator-\/=} (\hyperlink{class_vector}{Vector} vector2)
+\begin{DoxyCompactList}\small\item\em Przeciazenie odejmowania wektorow. \end{DoxyCompactList}\item 
+bool \hyperlink{class_vector_a416135596d86716064a1776141b2aa31}{operator==} (\hyperlink{class_vector}{Vector} vector2)
+\begin{DoxyCompactList}\small\item\em Przeciazenie operatora porownania. \end{DoxyCompactList}\item 
+\hyperlink{class_vector}{Vector} \hyperlink{class_vector_ac661330851f69358c8fb4bdc3de0412e}{operator-\/} (\hyperlink{class_vector}{Vector} vector2) const 
+\begin{DoxyCompactList}\small\item\em Odejmowanie bez zmiany obiektu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_vector_aba3f9dd718ed08bc7d91471d5856bd1c}{How\+Many} ()
+\begin{DoxyCompactList}\small\item\em Zliczanie i obrazowanie ilosci obiektor \hyperlink{class_vector}{Vector}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{class_vector_add70f47687018cd95d2486bd479f131a}{counter} =0
+\begin{DoxyCompactList}\small\item\em Licznik akutalnie istniejacych obiektow. \end{DoxyCompactList}\item 
+static int \hyperlink{class_vector_a7c6fa150970fc507368e0d06f9626194}{Counter\+Updated} =0
+\begin{DoxyCompactList}\small\item\em licznik stworzonych obiektow \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Typ \hyperlink{class_vector_a4696b907a043a0cf7feb8ef74efaee97}{coordinates} \mbox{[}Dimension\mbox{]}
+\begin{DoxyCompactList}\small\item\em Wspolrzedne wektora. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Typ, int Dimension$>$\\*
+class Vector$<$ Typ, Dimension $>$}
+
+Szablon wektor modeluje pojecie wektora w ukladzie wspolrzednych. Mozliwe jest dowolne wybranie wymiaru wektora. Szablon zawiera przeciazenia operatorow indeksujacych, operatora dodawania oraz dzielenia. Konstruktor przypisuje kazdemu elementowi wektora wartosc 0. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Vector@{Vector}!Vector@{Vector}}
+\index{Vector@{Vector}!Vector@{Vector}}
+\subsubsection[{\texorpdfstring{Vector()}{Vector()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ, int Dimension$>$ {\bf Vector}$<$ Typ, Dimension $>$\+::{\bf Vector} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_vector_a0dff28c6575a4239e55d76c62e12f9c8}{}\label{class_vector_a0dff28c6575a4239e55d76c62e12f9c8}
+Kazda wspolrzedna otrzymuje wartosc 0 \index{Vector@{Vector}!````~Vector@{$\sim$\+Vector}}
+\index{````~Vector@{$\sim$\+Vector}!Vector@{Vector}}
+\subsubsection[{\texorpdfstring{$\sim$\+Vector()}{~Vector()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ, int Dimension$>$ {\bf Vector}$<$ Typ, Dimension $>$\+::$\sim${\bf Vector} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_vector_a474267f5ebbaf240b6e01e9f9a4008dc}{}\label{class_vector_a474267f5ebbaf240b6e01e9f9a4008dc}
+\index{Vector@{Vector}!Vector@{Vector}}
+\index{Vector@{Vector}!Vector@{Vector}}
+\subsubsection[{\texorpdfstring{Vector(double x, double y, double z)}{Vector(double x, double y, double z)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ, int Dimension$>$ {\bf Vector}$<$ Typ, Dimension $>$\+::{\bf Vector} (
+\begin{DoxyParamCaption}
+\item[{double}]{x, }
+\item[{double}]{y, }
+\item[{double}]{z}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_vector_ac9bd98e42e721a38a9f92e6de1ac91ac}{}\label{class_vector_ac9bd98e42e721a38a9f92e6de1ac91ac}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & -\/wsp x \\
+\hline
+{\em y} & -\/ wsp y \\
+\hline
+{\em z} & -\/ wsp z \\
+\hline
+\end{DoxyParams}
+\index{Vector@{Vector}!Vector@{Vector}}
+\index{Vector@{Vector}!Vector@{Vector}}
+\subsubsection[{\texorpdfstring{Vector(const Vector \&vec)}{Vector(const Vector &vec)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ, int Dimension$>$ {\bf Vector}$<$ Typ, Dimension $>$\+::{\bf Vector} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector}$<$ Typ, Dimension $>$ \&}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_vector_a839c68689534954133753f8bcc6f953d}{}\label{class_vector_a839c68689534954133753f8bcc6f953d}
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & -\/ skopiowany obiekt \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Vector@{Vector}!How\+Many@{How\+Many}}
+\index{How\+Many@{How\+Many}!Vector@{Vector}}
+\subsubsection[{\texorpdfstring{How\+Many()}{HowMany()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ, int Dimension$>$ static void {\bf Vector}$<$ Typ, Dimension $>$\+::How\+Many (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{class_vector_aba3f9dd718ed08bc7d91471d5856bd1c}{}\label{class_vector_aba3f9dd718ed08bc7d91471d5856bd1c}
+\index{Vector@{Vector}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Vector@{Vector}}
+\subsubsection[{\texorpdfstring{operator+=(\+Vector vector2)}{operator+=(Vector vector2)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ, int Dimension$>$ {\bf Vector} {\bf Vector}$<$ Typ, Dimension $>$\+::operator+= (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector}$<$ Typ, Dimension $>$}]{vector2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_vector_a279d70d4570db9c244fe9e2cb74e1214}{}\label{class_vector_a279d70d4570db9c244fe9e2cb74e1214}
+
+\begin{DoxyParams}{Parameters}
+{\em vector2} & -\/ wektor dodawany \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_vector}{Vector} -\/ wektor bazowy po dodaniu drugiego wektora 
+\end{DoxyReturn}
+\index{Vector@{Vector}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Vector@{Vector}}
+\subsubsection[{\texorpdfstring{operator-\/(\+Vector vector2) const }{operator-(Vector vector2) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ, int Dimension$>$ {\bf Vector} {\bf Vector}$<$ Typ, Dimension $>$\+::operator-\/ (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector}$<$ Typ, Dimension $>$}]{vector2}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_vector_ac661330851f69358c8fb4bdc3de0412e}{}\label{class_vector_ac661330851f69358c8fb4bdc3de0412e}
+
+\begin{DoxyParams}{Parameters}
+{\em vector2} & -\/ wektor ktory odejmujemy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_vector}{Vector} -\/ zwracany wektor po odjeciu 
+\end{DoxyReturn}
+\index{Vector@{Vector}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!Vector@{Vector}}
+\subsubsection[{\texorpdfstring{operator-\/=(\+Vector vector2)}{operator-=(Vector vector2)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ, int Dimension$>$ {\bf Vector} {\bf Vector}$<$ Typ, Dimension $>$\+::operator-\/= (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector}$<$ Typ, Dimension $>$}]{vector2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_vector_a71f655b6eee1e552655d381a85aa9719}{}\label{class_vector_a71f655b6eee1e552655d381a85aa9719}
+
+\begin{DoxyParams}{Parameters}
+{\em vector2} & -\/ wektor odejmowany \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_vector}{Vector} -\/ zwracany wektor po odjeciu 
+\end{DoxyReturn}
+\index{Vector@{Vector}!operator/@{operator/}}
+\index{operator/@{operator/}!Vector@{Vector}}
+\subsubsection[{\texorpdfstring{operator/(double divorce)}{operator/(double divorce)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ, int Dimension$>$ {\bf Vector}\& {\bf Vector}$<$ Typ, Dimension $>$\+::operator/ (
+\begin{DoxyParamCaption}
+\item[{double}]{divorce}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_vector_a78da39dae1595a16bf12245bc29a9beb}{}\label{class_vector_a78da39dae1595a16bf12245bc29a9beb}
+
+\begin{DoxyParams}{Parameters}
+{\em divorce} & -\/ dzielnik \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_vector}{Vector}\& -\/ podzielony wektor 
+\end{DoxyReturn}
+\index{Vector@{Vector}!operator==@{operator==}}
+\index{operator==@{operator==}!Vector@{Vector}}
+\subsubsection[{\texorpdfstring{operator==(\+Vector vector2)}{operator==(Vector vector2)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ, int Dimension$>$ bool {\bf Vector}$<$ Typ, Dimension $>$\+::operator== (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector}$<$ Typ, Dimension $>$}]{vector2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_vector_a416135596d86716064a1776141b2aa31}{}\label{class_vector_a416135596d86716064a1776141b2aa31}
+
+\begin{DoxyParams}{Parameters}
+{\em vector2} & -\/ wektor do porownania \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true -\/ rowne 
+
+false -\/ nie rowne 
+\end{DoxyReturn}
+\index{Vector@{Vector}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Vector@{Vector}}
+\subsubsection[{\texorpdfstring{operator[](int Index)}{operator[](int Index)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ, int Dimension$>$ Typ\& {\bf Vector}$<$ Typ, Dimension $>$\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{int}]{Index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_vector_acfb4ddcc2287a4fcf158f559907ba378}{}\label{class_vector_acfb4ddcc2287a4fcf158f559907ba378}
+
+\begin{DoxyParams}{Parameters}
+{\em Index} & -\/ wybor osi \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Typ\& -\/ zwracana wartosc wspolrzednej 
+\end{DoxyReturn}
+\index{Vector@{Vector}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Vector@{Vector}}
+\subsubsection[{\texorpdfstring{operator[](int Index) const }{operator[](int Index) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ, int Dimension$>$ Typ {\bf Vector}$<$ Typ, Dimension $>$\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{int}]{Index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_vector_a0657574140fa760b6c624a284f7ba2b7}{}\label{class_vector_a0657574140fa760b6c624a284f7ba2b7}
+
+\begin{DoxyParams}{Parameters}
+{\em Index} & -\/ wybor osi \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Typ -\/ wartosc wspolrzednej 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{Vector@{Vector}!coordinates@{coordinates}}
+\index{coordinates@{coordinates}!Vector@{Vector}}
+\subsubsection[{\texorpdfstring{coordinates}{coordinates}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ, int Dimension$>$ Typ {\bf Vector}$<$ Typ, Dimension $>$\+::coordinates\mbox{[}Dimension\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_vector_a4696b907a043a0cf7feb8ef74efaee97}{}\label{class_vector_a4696b907a043a0cf7feb8ef74efaee97}
+\index{Vector@{Vector}!counter@{counter}}
+\index{counter@{counter}!Vector@{Vector}}
+\subsubsection[{\texorpdfstring{counter}{counter}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ, int Dimension$>$ int {\bf Vector}$<$ Typ, Dimension $>$\+::counter =0\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_vector_add70f47687018cd95d2486bd479f131a}{}\label{class_vector_add70f47687018cd95d2486bd479f131a}
+Wyzerowanie licznika. \index{Vector@{Vector}!Counter\+Updated@{Counter\+Updated}}
+\index{Counter\+Updated@{Counter\+Updated}!Vector@{Vector}}
+\subsubsection[{\texorpdfstring{Counter\+Updated}{CounterUpdated}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ, int Dimension$>$ int {\bf Vector}$<$ Typ, Dimension $>$\+::Counter\+Updated =0\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_vector_a7c6fa150970fc507368e0d06f9626194}{}\label{class_vector_a7c6fa150970fc507368e0d06f9626194}
+Wyzerowanie licznika. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{vector_8hh}{vector.\+hh}\end{DoxyCompactItemize}

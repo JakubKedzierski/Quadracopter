@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_72345776cd6700fb0dedb8f1faaa0c00" kind="dir">
+    <compoundname>inc</compoundname>
+    <innerfile refid="cuboid_8hh">cuboid.hh</innerfile>
+    <innerfile refid="figures3_d_8hh">figures3D.hh</innerfile>
+    <innerfile refid="gnuplot__link_8hh">gnuplot_link.hh</innerfile>
+    <innerfile refid="_hex_prism_8hh">HexPrism.hh</innerfile>
+    <innerfile refid="matrix_8hh">matrix.hh</innerfile>
+    <innerfile refid="matrix3x3_8hh">matrix3x3.hh</innerfile>
+    <innerfile refid="_object_of_scene_8hh">ObjectOfScene.hh</innerfile>
+    <innerfile refid="_obstacles_8hh">Obstacles.hh</innerfile>
+    <innerfile refid="_plant_of_obstacles_8hh">PlantOfObstacles.hh</innerfile>
+    <innerfile refid="_quadracopter_8hh">Quadracopter.hh</innerfile>
+    <innerfile refid="scene_8hh">scene.hh</innerfile>
+    <innerfile refid="vector_8hh">vector.hh</innerfile>
+    <innerfile refid="vector3_d_8hh">vector3D.hh</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/kuba/obiekt/DronLvHard/prj/inc/"/>
+  </compounddef>
+</doxygen>

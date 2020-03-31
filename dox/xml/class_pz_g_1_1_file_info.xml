@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_pz_g_1_1_file_info" kind="class" language="C++" prot="public">
+    <compoundname>PzG::FileInfo</compoundname>
+    <includes refid="gnuplot__link_8hh" local="no">gnuplot_link.hh</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_pz_g_1_1_file_info_1a04f77a755e72bcf379844b15d9f0f3ed" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string PzG::FileInfo::filename_</definition>
+        <argsstring></argsstring>
+        <name>filename_</name>
+        <briefdescription>
+<para>Nazwa pliku z danymi do rysowania. </para>        </briefdescription>
+        <detaileddescription>
+<para>Nazwa pliku z danymi do rysowania. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kuba/obiekt/DronLvHard/prj/inc/gnuplot_link.hh" line="101" column="1" bodyfile="/home/kuba/obiekt/DronLvHard/prj/inc/gnuplot_link.hh" bodystart="101" bodyend="-1"/>
+        <referencedby refid="class_pz_g_1_1_file_info_1a09603738e0fbc8d6dadda905a5e947d7" compoundref="gnuplot__link_8hh" startline="64" endline="69">FileInfo</referencedby>
+        <referencedby refid="class_pz_g_1_1_file_info_1a22aff3716073c3755d308851ce253188" compoundref="gnuplot__link_8hh" startline="75" endline="75">GetFilename</referencedby>
+        <referencedby refid="class_pz_g_1_1_file_info_1a02c728f892c6f169b738adac8ed9d5f1" compoundref="gnuplot__link_8hh" startline="81" endline="81">SetFilename</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_pz_g_1_1_file_info_1a1a1d3ea502a2604eec731ca50a2b438f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PzG::FileInfo::width_</definition>
+        <argsstring></argsstring>
+        <name>width_</name>
+        <briefdescription>
+<para>Szerokość użytego piórka. </para>        </briefdescription>
+        <detaileddescription>
+<para>Określa szerokość piórka, jakie ma być użyte do rysowania obiektów graficznych. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kuba/obiekt/DronLvHard/prj/inc/gnuplot_link.hh" line="108" column="1" bodyfile="/home/kuba/obiekt/DronLvHard/prj/inc/gnuplot_link.hh" bodystart="108" bodyend="-1"/>
+        <referencedby refid="class_pz_g_1_1_file_info_1a09603738e0fbc8d6dadda905a5e947d7" compoundref="gnuplot__link_8hh" startline="64" endline="69">FileInfo</referencedby>
+        <referencedby refid="class_pz_g_1_1_file_info_1a44863ad6997e427a736e8b4663d5a1bc" compoundref="gnuplot__link_8hh" startline="93" endline="93">GetWidth</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_pz_g_1_1_file_info_1a9141a03aee9840ebe103e4b1b6fa5c9b" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_pz_g_1ab0580cdb6bfe9e51d7de2588bc824076" kindref="member">LineStyle</ref></type>
+        <definition>LineStyle PzG::FileInfo::style_</definition>
+        <argsstring></argsstring>
+        <name>style_</name>
+        <briefdescription>
+<para>Sposób rysowania danej linii. </para>        </briefdescription>
+        <detaileddescription>
+<para>Przechowuje informacje o sposobie rysowania linii. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kuba/obiekt/DronLvHard/prj/inc/gnuplot_link.hh" line="114" column="1" bodyfile="/home/kuba/obiekt/DronLvHard/prj/inc/gnuplot_link.hh" bodystart="114" bodyend="-1"/>
+        <referencedby refid="class_pz_g_1_1_file_info_1a09603738e0fbc8d6dadda905a5e947d7" compoundref="gnuplot__link_8hh" startline="64" endline="69">FileInfo</referencedby>
+        <referencedby refid="class_pz_g_1_1_file_info_1a9548e8dce5707b93edd5cc6d9fd06c0d" compoundref="gnuplot__link_8hh" startline="87" endline="87">GetStyle</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_pz_g_1_1_file_info_1a09603738e0fbc8d6dadda905a5e947d7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PzG::FileInfo::FileInfo</definition>
+        <argsstring>(std::string filename, LineStyle style, int width)</argsstring>
+        <name>FileInfo</name>
+        <param>
+          <type>std::string</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_pz_g_1ab0580cdb6bfe9e51d7de2588bc824076" kindref="member">LineStyle</ref></type>
+          <declname>style</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Inicjalizuje obiekt. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- nazwa pliku, z którego pobierane będą dane, </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>style</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- rodzaj rysowania linii, </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- szerokosc linii. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kuba/obiekt/DronLvHard/prj/inc/gnuplot_link.hh" line="64" column="1" bodyfile="/home/kuba/obiekt/DronLvHard/prj/inc/gnuplot_link.hh" bodystart="64" bodyend="69"/>
+        <references refid="class_pz_g_1_1_file_info_1a04f77a755e72bcf379844b15d9f0f3ed" compoundref="gnuplot__link_8hh" startline="101">filename_</references>
+        <references refid="class_pz_g_1_1_file_info_1a9141a03aee9840ebe103e4b1b6fa5c9b" compoundref="gnuplot__link_8hh" startline="114">style_</references>
+        <references refid="class_pz_g_1_1_file_info_1a1a1d3ea502a2604eec731ca50a2b438f" compoundref="gnuplot__link_8hh" startline="108">width_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_file_info_1a22aff3716073c3755d308851ce253188" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string</type>
+        <definition>const std::string PzG::FileInfo::GetFilename</definition>
+        <argsstring>() const </argsstring>
+        <name>GetFilename</name>
+        <briefdescription>
+<para>Udostępia nazwę pliku do rysowania. </para>        </briefdescription>
+        <detaileddescription>
+<para>Udostępnia nazwę pliku z danymi do rysowania. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kuba/obiekt/DronLvHard/prj/inc/gnuplot_link.hh" line="75" column="1" bodyfile="/home/kuba/obiekt/DronLvHard/prj/inc/gnuplot_link.hh" bodystart="75" bodyend="75"/>
+        <references refid="class_pz_g_1_1_file_info_1a04f77a755e72bcf379844b15d9f0f3ed" compoundref="gnuplot__link_8hh" startline="101">filename_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_file_info_1a02c728f892c6f169b738adac8ed9d5f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PzG::FileInfo::SetFilename</definition>
+        <argsstring>(const std::string &amp;filename)</argsstring>
+        <name>SetFilename</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Zmienia nazwę pliku do rysowania. </para>        </briefdescription>
+        <detaileddescription>
+<para>Zmienia nazwę pliku z danymi do rysowania. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kuba/obiekt/DronLvHard/prj/inc/gnuplot_link.hh" line="81" column="1" bodyfile="/home/kuba/obiekt/DronLvHard/prj/inc/gnuplot_link.hh" bodystart="81" bodyend="81"/>
+        <references refid="class_pz_g_1_1_file_info_1a04f77a755e72bcf379844b15d9f0f3ed" compoundref="gnuplot__link_8hh" startline="101">filename_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_file_info_1a9548e8dce5707b93edd5cc6d9fd06c0d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespace_pz_g_1ab0580cdb6bfe9e51d7de2588bc824076" kindref="member">LineStyle</ref></type>
+        <definition>LineStyle PzG::FileInfo::GetStyle</definition>
+        <argsstring>() const </argsstring>
+        <name>GetStyle</name>
+        <briefdescription>
+<para>Udostępnia sposób rysowanej linii. </para>        </briefdescription>
+        <detaileddescription>
+<para>Udostępnia informację o sposóbie rysowania linii. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kuba/obiekt/DronLvHard/prj/inc/gnuplot_link.hh" line="87" column="1" bodyfile="/home/kuba/obiekt/DronLvHard/prj/inc/gnuplot_link.hh" bodystart="87" bodyend="87"/>
+        <references refid="class_pz_g_1_1_file_info_1a9141a03aee9840ebe103e4b1b6fa5c9b" compoundref="gnuplot__link_8hh" startline="114">style_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_pz_g_1_1_file_info_1a44863ad6997e427a736e8b4663d5a1bc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int PzG::FileInfo::GetWidth</definition>
+        <argsstring>() const </argsstring>
+        <name>GetWidth</name>
+        <briefdescription>
+<para>Udostępnia informację o szerokości linii. </para>        </briefdescription>
+        <detaileddescription>
+<para>Udostępnia informację o szerokości rysowanej linii. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kuba/obiekt/DronLvHard/prj/inc/gnuplot_link.hh" line="93" column="1" bodyfile="/home/kuba/obiekt/DronLvHard/prj/inc/gnuplot_link.hh" bodystart="93" bodyend="93"/>
+        <references refid="class_pz_g_1_1_file_info_1a1a1d3ea502a2604eec731ca50a2b438f" compoundref="gnuplot__link_8hh" startline="108">width_</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Zestaw informacji dotyczący pliku i sposobu rysowania. </para>    </briefdescription>
+    <detaileddescription>
+<para>Klasa modeluje zestaw informacji dotyczący pliku i sposobu w jaki mają być wizualizowane zawarte w nim dane. </para>    </detaileddescription>
+    <location file="/home/kuba/obiekt/DronLvHard/prj/inc/gnuplot_link.hh" line="56" column="1" bodyfile="/home/kuba/obiekt/DronLvHard/prj/inc/gnuplot_link.hh" bodystart="56" bodyend="115"/>
+    <listofallmembers>
+      <member refid="class_pz_g_1_1_file_info_1a09603738e0fbc8d6dadda905a5e947d7" prot="public" virt="non-virtual"><scope>PzG::FileInfo</scope><name>FileInfo</name></member>
+      <member refid="class_pz_g_1_1_file_info_1a04f77a755e72bcf379844b15d9f0f3ed" prot="private" virt="non-virtual"><scope>PzG::FileInfo</scope><name>filename_</name></member>
+      <member refid="class_pz_g_1_1_file_info_1a22aff3716073c3755d308851ce253188" prot="public" virt="non-virtual"><scope>PzG::FileInfo</scope><name>GetFilename</name></member>
+      <member refid="class_pz_g_1_1_file_info_1a9548e8dce5707b93edd5cc6d9fd06c0d" prot="public" virt="non-virtual"><scope>PzG::FileInfo</scope><name>GetStyle</name></member>
+      <member refid="class_pz_g_1_1_file_info_1a44863ad6997e427a736e8b4663d5a1bc" prot="public" virt="non-virtual"><scope>PzG::FileInfo</scope><name>GetWidth</name></member>
+      <member refid="class_pz_g_1_1_file_info_1a02c728f892c6f169b738adac8ed9d5f1" prot="public" virt="non-virtual"><scope>PzG::FileInfo</scope><name>SetFilename</name></member>
+      <member refid="class_pz_g_1_1_file_info_1a9141a03aee9840ebe103e4b1b6fa5c9b" prot="private" virt="non-virtual"><scope>PzG::FileInfo</scope><name>style_</name></member>
+      <member refid="class_pz_g_1_1_file_info_1a1a1d3ea502a2604eec731ca50a2b438f" prot="private" virt="non-virtual"><scope>PzG::FileInfo</scope><name>width_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

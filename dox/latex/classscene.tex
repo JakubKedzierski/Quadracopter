@@ -1,0 +1,74 @@
+\hypertarget{classscene}{}\section{scene Class Reference}
+\label{classscene}\index{scene@{scene}}
+
+
+Klasa modeluje pojecie sceny i obiektow znajdujacych sie na niej.  
+
+
+
+
+{\ttfamily \#include $<$scene.\+hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classscene_a31beecfc650064406d6142d8bb81236d}{scene} ()
+\item 
+vector$<$ shared\+\_\+ptr$<$ \hyperlink{class_quadracopter}{Quadracopter} $>$ $>$ \& \hyperlink{classscene_ad20f1f57cc34e799e12a507282a2fe40}{Get\+Drone} ()
+\begin{DoxyCompactList}\small\item\em Pobranie tablicy dronow. \end{DoxyCompactList}\item 
+list$<$ shared\+\_\+ptr$<$ \hyperlink{class_object_of_scene}{Object\+Of\+Scene} $>$ $>$ \& \hyperlink{classscene_a9e1bc92a004913c3485e6b6c34c60569}{Get\+Science\+Object} ()
+\begin{DoxyCompactList}\small\item\em Pobranie listy obiektow na scenie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ shared\+\_\+ptr$<$ \hyperlink{class_quadracopter}{Quadracopter} $>$ $>$ \hyperlink{classscene_a3798bb3e6e4813c381a6934bb264ddcc}{Drone}
+\begin{DoxyCompactList}\small\item\em tablica dynamiczna dronow( z lista jest problem z odwolaniem do konretnego elementu) \end{DoxyCompactList}\item 
+list$<$ shared\+\_\+ptr$<$ \hyperlink{class_object_of_scene}{Object\+Of\+Scene} $>$ $>$ \hyperlink{classscene_a5adf71e0375b90603aa75148c2927ecb}{Scene\+Object}
+\begin{DoxyCompactList}\small\item\em Lista wszystkich obiektow na scenie z ktorymi jest sprawdzana kolizja. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{scene@{scene}!scene@{scene}}
+\index{scene@{scene}!scene@{scene}}
+\subsubsection[{\texorpdfstring{scene()}{scene()}}]{\setlength{\rightskip}{0pt plus 5cm}scene\+::scene (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classscene_a31beecfc650064406d6142d8bb81236d}{}\label{classscene_a31beecfc650064406d6142d8bb81236d}
+
+
+\subsection{Member Function Documentation}
+\index{scene@{scene}!Get\+Drone@{Get\+Drone}}
+\index{Get\+Drone@{Get\+Drone}!scene@{scene}}
+\subsubsection[{\texorpdfstring{Get\+Drone()}{GetDrone()}}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$shared\+\_\+ptr$<${\bf Quadracopter}$>$ $>$\& scene\+::\+Get\+Drone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classscene_ad20f1f57cc34e799e12a507282a2fe40}{}\label{classscene_ad20f1f57cc34e799e12a507282a2fe40}
+\begin{DoxyReturn}{Returns}
+vector $<$shared\+\_\+ptr$<$\+Quadracopter$>$$>$ tablica dronow 
+\end{DoxyReturn}
+\index{scene@{scene}!Get\+Science\+Object@{Get\+Science\+Object}}
+\index{Get\+Science\+Object@{Get\+Science\+Object}!scene@{scene}}
+\subsubsection[{\texorpdfstring{Get\+Science\+Object()}{GetScienceObject()}}]{\setlength{\rightskip}{0pt plus 5cm}list$<$shared\+\_\+ptr$<${\bf Object\+Of\+Scene}$>$ $>$\& scene\+::\+Get\+Science\+Object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classscene_a9e1bc92a004913c3485e6b6c34c60569}{}\label{classscene_a9e1bc92a004913c3485e6b6c34c60569}
+\begin{DoxyReturn}{Returns}
+list$<$shared\+\_\+ptr$<$\+Object\+Of\+Scene$>$$>$ lista obiektow na scenie 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{scene@{scene}!Drone@{Drone}}
+\index{Drone@{Drone}!scene@{scene}}
+\subsubsection[{\texorpdfstring{Drone}{Drone}}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$shared\+\_\+ptr$<${\bf Quadracopter}$>$ $>$ scene\+::\+Drone\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classscene_a3798bb3e6e4813c381a6934bb264ddcc}{}\label{classscene_a3798bb3e6e4813c381a6934bb264ddcc}
+\index{scene@{scene}!Scene\+Object@{Scene\+Object}}
+\index{Scene\+Object@{Scene\+Object}!scene@{scene}}
+\subsubsection[{\texorpdfstring{Scene\+Object}{SceneObject}}]{\setlength{\rightskip}{0pt plus 5cm}list$<$shared\+\_\+ptr$<${\bf Object\+Of\+Scene}$>$ $>$ scene\+::\+Scene\+Object\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classscene_a5adf71e0375b90603aa75148c2927ecb}{}\label{classscene_a5adf71e0375b90603aa75148c2927ecb}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{scene_8hh}{scene.\+hh}\end{DoxyCompactItemize}

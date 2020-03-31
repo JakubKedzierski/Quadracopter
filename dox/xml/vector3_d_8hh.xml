@@ -1,0 +1,228 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="vector3_d_8hh" kind="file" language="C++">
+    <compoundname>vector3D.hh</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">fstream</includes>
+    <includes refid="vector_8hh" local="yes">vector.hh</includes>
+    <includedby refid="matrix_8hh" local="yes">matrix.hh</includedby>
+    <includedby refid="matrix3x3_8hh" local="yes">matrix3x3.hh</includedby>
+    <includedby refid="figures3_d_8hh" local="yes">figures3D.hh</includedby>
+    <includedby refid="_object_of_scene_8hh" local="yes">ObjectOfScene.hh</includedby>
+    <incdepgraph>
+      <node id="424">
+        <label>iomanip</label>
+      </node>
+      <node id="423">
+        <label>vector.hh</label>
+        <link refid="vector_8hh"/>
+        <childnode refid="421" relation="include">
+        </childnode>
+        <childnode refid="424" relation="include">
+        </childnode>
+      </node>
+      <node id="420">
+        <label>vector3D.hh</label>
+        <link refid="vector3D.hh"/>
+        <childnode refid="421" relation="include">
+        </childnode>
+        <childnode refid="422" relation="include">
+        </childnode>
+        <childnode refid="423" relation="include">
+        </childnode>
+      </node>
+      <node id="422">
+        <label>fstream</label>
+      </node>
+      <node id="421">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="428">
+        <label>cuboid.hh</label>
+        <link refid="cuboid_8hh"/>
+        <childnode refid="429" relation="include">
+        </childnode>
+        <childnode refid="436" relation="include">
+        </childnode>
+        <childnode refid="438" relation="include">
+        </childnode>
+        <childnode refid="439" relation="include">
+        </childnode>
+      </node>
+      <node id="440">
+        <label>figures3D.hh</label>
+        <link refid="figures3_d_8hh"/>
+        <childnode refid="428" relation="include">
+        </childnode>
+        <childnode refid="441" relation="include">
+        </childnode>
+        <childnode refid="442" relation="include">
+        </childnode>
+      </node>
+      <node id="439">
+        <label>HexPrism.cpp</label>
+        <link refid="_hex_prism_8cpp"/>
+      </node>
+      <node id="431">
+        <label>PlantOfObstacles.hh</label>
+        <link refid="_plant_of_obstacles_8hh"/>
+        <childnode refid="432" relation="include">
+        </childnode>
+        <childnode refid="433" relation="include">
+        </childnode>
+      </node>
+      <node id="442">
+        <label>figures3D.cpp</label>
+        <link refid="figures3_d_8cpp"/>
+      </node>
+      <node id="435">
+        <label>Obstacles.cpp</label>
+        <link refid="_obstacles_8cpp"/>
+      </node>
+      <node id="425">
+        <label>vector3D.hh</label>
+        <link refid="vector3D.hh"/>
+        <childnode refid="426" relation="include">
+        </childnode>
+        <childnode refid="427" relation="include">
+        </childnode>
+        <childnode refid="440" relation="include">
+        </childnode>
+        <childnode refid="443" relation="include">
+        </childnode>
+      </node>
+      <node id="436">
+        <label>Quadracopter.hh</label>
+        <link refid="_quadracopter_8hh"/>
+        <childnode refid="430" relation="include">
+        </childnode>
+        <childnode refid="437" relation="include">
+        </childnode>
+      </node>
+      <node id="437">
+        <label>Quadracopter.cpp</label>
+        <link refid="_quadracopter_8cpp"/>
+      </node>
+      <node id="429">
+        <label>Obstacles.hh</label>
+        <link refid="_obstacles_8hh"/>
+        <childnode refid="430" relation="include">
+        </childnode>
+        <childnode refid="435" relation="include">
+        </childnode>
+      </node>
+      <node id="438">
+        <label>cuboid.cpp</label>
+        <link refid="cuboid_8cpp"/>
+      </node>
+      <node id="443">
+        <label>ObjectOfScene.hh</label>
+        <link refid="_object_of_scene_8hh"/>
+        <childnode refid="429" relation="include">
+        </childnode>
+        <childnode refid="436" relation="include">
+        </childnode>
+        <childnode refid="444" relation="include">
+        </childnode>
+      </node>
+      <node id="430">
+        <label>scene.hh</label>
+        <link refid="scene_8hh"/>
+        <childnode refid="431" relation="include">
+        </childnode>
+        <childnode refid="434" relation="include">
+        </childnode>
+      </node>
+      <node id="444">
+        <label>ObjectOfScene.cpp</label>
+        <link refid="_object_of_scene_8cpp"/>
+      </node>
+      <node id="426">
+        <label>matrix.hh</label>
+        <link refid="matrix_8hh"/>
+        <childnode refid="427" relation="include">
+        </childnode>
+      </node>
+      <node id="427">
+        <label>matrix3x3.hh</label>
+        <link refid="matrix3x3_8hh"/>
+        <childnode refid="428" relation="include">
+        </childnode>
+        <childnode refid="440" relation="include">
+        </childnode>
+        <childnode refid="441" relation="include">
+        </childnode>
+      </node>
+      <node id="434">
+        <label>scene.cpp</label>
+        <link refid="scene_8cpp"/>
+      </node>
+      <node id="432">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="441">
+        <label>HexPrism.hh</label>
+        <link refid="_hex_prism_8hh"/>
+        <childnode refid="436" relation="include">
+        </childnode>
+        <childnode refid="439" relation="include">
+        </childnode>
+      </node>
+      <node id="433">
+        <label>PlantOfObstacles.cpp</label>
+        <link refid="_plant_of_obstacles_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="vector3_d_8hh_1a8790ef07836c1639da216f46501979c0" prot="public" static="no">
+        <type><ref refid="class_vector" kindref="compound">Vector</ref>&lt; double, 3 &gt;</type>
+        <definition>using Vector3D =  Vector &lt;double,3&gt;</definition>
+        <argsstring></argsstring>
+        <name>Vector3D</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>definicja wektora 3d </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kuba/obiekt/DronLvHard/prj/inc/vector3D.hh" line="17" column="1" bodyfile="/home/kuba/obiekt/DronLvHard/prj/inc/vector3D.hh" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="vector3_d_8hh_1aebac2fc600b2b39e7ce77d58994cc0f0" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int Dim</definition>
+        <argsstring></argsstring>
+        <name>Dim</name>
+        <initializer>=3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kuba/obiekt/DronLvHard/prj/inc/vector3D.hh" line="7" column="1" bodyfile="/home/kuba/obiekt/DronLvHard/prj/inc/vector3D.hh" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Definicja wektora 3d. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="vector_8hh" kindref="compound">vector.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacestd" kindref="compound">std</ref>;</highlight></codeline>
+<codeline lineno="7" refid="vector3_d_8hh_1aebac2fc600b2b39e7ce77d58994cc0f0" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="vector3_d_8hh_1aebac2fc600b2b39e7ce77d58994cc0f0" kindref="member">Dim</ref>=3;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="vector3_d_8hh_1a8790ef07836c1639da216f46501979c0" refkind="member"><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="class_vector" kindref="compound">Vector3D</ref><sp/>=<sp/><ref refid="class_vector" kindref="compound">Vector &lt;double,3&gt;</ref><sp/>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/kuba/obiekt/DronLvHard/prj/inc/vector3D.hh"/>
+  </compounddef>
+</doxygen>

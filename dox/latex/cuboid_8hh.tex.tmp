@@ -1,0 +1,62 @@
+\hypertarget{cuboid_8hh}{}\section{/home/kuba/obiekt/rotacje3/prj/inc/cuboid.hh File Reference}
+\label{cuboid_8hh}\index{/home/kuba/obiekt/rotacje3/prj/inc/cuboid.\+hh@{/home/kuba/obiekt/rotacje3/prj/inc/cuboid.\+hh}}
+
+
+Klasa modeluje prostopadloscian.  
+
+
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+{\ttfamily \#include \char`\"{}vector3\+D.\+hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}matrix3x3.\+hh\char`\"{}}\\*
+Include dependency graph for cuboid.\+hh\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_cuboid}{Cuboid}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{cuboid_8hh_a59a9715fe914350ccae0ad872840745a}{Node\+Number}~8
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{cuboid_8hh_abbad847752c6407a34085f099a761f8f}{operator$<$$<$} (std\+::ostream \&stream, \hyperlink{class_cuboid}{Cuboid} \&cube)
+\item 
+std\+::ofstream \& \hyperlink{cuboid_8hh_a71dba4254e2ec6eec0aca6f1b621d02c}{operator$<$$<$} (std\+::ofstream \&stream, \hyperlink{class_cuboid}{Cuboid} \&cube)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Klasa modeluje prostopadloscian. 
+
+Reprezentacja prostokata jest tablica 4 wierzcholkow Wierzcholki podane sa w postaci wektorow zaczepionych w punkcie (0,0) Metody w klasie\+:utworzenie prostokata, dostep do wierzcholkow, translacja o wektor, mnozenie przez macierz, liczenie porownywanie bokow, wydrukiwanie wierzcholkow na odpowiednie wyjscie 
+
+\subsection{Macro Definition Documentation}
+\index{cuboid.\+hh@{cuboid.\+hh}!Node\+Number@{Node\+Number}}
+\index{Node\+Number@{Node\+Number}!cuboid.\+hh@{cuboid.\+hh}}
+\subsubsection[{\texorpdfstring{Node\+Number}{NodeNumber}}]{\setlength{\rightskip}{0pt plus 5cm}\#define Node\+Number~8}\hypertarget{cuboid_8hh_a59a9715fe914350ccae0ad872840745a}{}\label{cuboid_8hh_a59a9715fe914350ccae0ad872840745a}
+
+
+\subsection{Function Documentation}
+\index{cuboid.\+hh@{cuboid.\+hh}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!cuboid.\+hh@{cuboid.\+hh}}
+\subsubsection[{\texorpdfstring{operator$<$$<$(std\+::ostream \&stream, Cuboid \&cube)}{operator<<(std::ostream &stream, Cuboid &cube)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{stream, }
+\item[{{\bf Cuboid} \&}]{cube}
+\end{DoxyParamCaption}
+)}\hypertarget{cuboid_8hh_abbad847752c6407a34085f099a761f8f}{}\label{cuboid_8hh_abbad847752c6407a34085f099a761f8f}
+\index{cuboid.\+hh@{cuboid.\+hh}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!cuboid.\+hh@{cuboid.\+hh}}
+\subsubsection[{\texorpdfstring{operator$<$$<$(std\+::ofstream \&stream, Cuboid \&cube)}{operator<<(std::ofstream &stream, Cuboid &cube)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ofstream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\+::ofstream \&}]{stream, }
+\item[{{\bf Cuboid} \&}]{cube}
+\end{DoxyParamCaption}
+)}\hypertarget{cuboid_8hh_a71dba4254e2ec6eec0aca6f1b621d02c}{}\label{cuboid_8hh_a71dba4254e2ec6eec0aca6f1b621d02c}

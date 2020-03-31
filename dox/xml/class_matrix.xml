@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_matrix" kind="class" language="C++" prot="public">
+    <compoundname>Matrix</compoundname>
+    <includes refid="matrix_8hh" local="no">matrix.hh</includes>
+    <templateparamlist>
+      <param>
+        <type>int</type>
+        <declname>Dimension</declname>
+        <defname>Dimension</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_matrix_1a169e3264e9218b6881c8108db0cdf5c2" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Matrix&lt; Dimension &gt;::a[Dimension][Dimension]</definition>
+        <argsstring>[Dimension][Dimension]</argsstring>
+        <name>a</name>
+        <briefdescription>
+<para>Wspolrzedne macierzy przechowywane w dwuwymiarowej tablicy. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kuba/obiekt/DronLvHard/prj/inc/matrix.hh" line="31" column="1" bodyfile="/home/kuba/obiekt/DronLvHard/prj/inc/matrix.hh" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_matrix_1afff1ac83775f029d4bf9e472fff2b27e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double &amp;</type>
+        <definition>double&amp; Matrix&lt; Dimension &gt;::operator()</definition>
+        <argsstring>(int Index1, int Index2)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>int</type>
+          <declname>Index1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>Index2</declname>
+        </param>
+        <briefdescription>
+<para>Pobranie wartosci danego pola macierzy. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Index1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- wiersz </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Index2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- kolumna </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>double&amp; - wartosc w danym polu, z mozliwoscia zmianny </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kuba/obiekt/DronLvHard/prj/inc/matrix.hh" line="42" column="1" bodyfile="/home/kuba/obiekt/DronLvHard/prj/inc/matrix.hh" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="class_matrix_1a177a108c9b4631a0ef268c88b1aaf677" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Matrix&lt; Dimension &gt;::operator()</definition>
+        <argsstring>(int Index1, int Index2) const </argsstring>
+        <name>operator()</name>
+        <param>
+          <type>int</type>
+          <declname>Index1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>Index2</declname>
+        </param>
+        <briefdescription>
+<para>Pobranie wartosci danego pola macierzy bez mozliwosci modyfikacji tego pola. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Index1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- wiersz </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Index2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- kolumna </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>double - wartosc danego pola macierzy bez mozliwosci modyfikacji </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kuba/obiekt/DronLvHard/prj/inc/matrix.hh" line="51" column="1" bodyfile="/home/kuba/obiekt/DronLvHard/prj/inc/matrix.hh" bodystart="51" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_matrix_1ad3ddae5930748134cb331bf0bb508b86" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Matrix&lt; Dimension &gt;::Matrix</definition>
+        <argsstring>()</argsstring>
+        <name>Matrix</name>
+        <briefdescription>
+<para>Stworzenie nowego obiektu macierzy z przypisaniem zerowych wartosci. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kuba/obiekt/DronLvHard/prj/inc/matrix.hh" line="57" column="1" bodyfile="/home/kuba/obiekt/DronLvHard/prj/inc/matrix.hh" bodystart="57" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="class_matrix_1a25f743bb00f51eec66fc020f0600b2df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Matrix&lt; Dimension &gt;::Type_In</definition>
+        <argsstring>(double alpha=1, char ChoiceOfAxix=&apos;z&apos;)</argsstring>
+        <name>Type_In</name>
+        <param>
+          <type>double</type>
+          <declname>alpha</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>ChoiceOfAxix</declname>
+          <defval>&apos;z&apos;</defval>
+        </param>
+        <briefdescription>
+<para>Wpsisanie odpowiednich wartosci do macierzy. </para>        </briefdescription>
+        <detaileddescription>
+<para>Funkcja na potrzeby macierzy 3 wymiarowej. Umozliwia wpisanie odpowiedniej macierzy obrotu(dla kazdej osi wartosci macierzy obrotu sa inne)</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- kat obrotu </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ChoiceOfAxix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- wybor osi obrotu </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kuba/obiekt/DronLvHard/prj/inc/matrix.hh" line="74" column="1" bodyfile="/home/kuba/obiekt/DronLvHard/prj/inc/matrix.hh" bodystart="74" bodyend="125"/>
+        <referencedby refid="class_hex_prism_1a7d4bf4b9176fbb01146e74875d780626" compoundref="_hex_prism_8cpp" startline="43" endline="63">HexPrism::rotor</referencedby>
+        <referencedby refid="main_8cpp_1ae6f911847aa1576987a4a55da84635c8" compoundref="main_8cpp" startline="105" endline="166">ChangeOrientation</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_matrix_1a0db7f73a11fbe9a85d029d677c89582a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="vector3_d_8hh_1a8790ef07836c1639da216f46501979c0" kindref="member">Vector3D</ref></type>
+        <definition>Vector3D Matrix&lt; Dimension &gt;::operator*</definition>
+        <argsstring>(Vector3D &amp;vector) const </argsstring>
+        <name>operator*</name>
+        <param>
+          <type><ref refid="vector3_d_8hh_1a8790ef07836c1639da216f46501979c0" kindref="member">Vector3D</ref> &amp;</type>
+          <declname>vector</declname>
+        </param>
+        <briefdescription>
+<para>mnozenie wektora przez macierz </para>        </briefdescription>
+        <detaileddescription>
+<para>mnozenie wektora przez macierz obrotu do ustalenia wspolrzednych po operacji rotacji</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vector</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- mnozony wektor </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Vector3D - przemnozony wektor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kuba/obiekt/DronLvHard/prj/inc/matrix.hh" line="136" column="1" bodyfile="/home/kuba/obiekt/DronLvHard/prj/inc/matrix.hh" bodystart="136" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="class_matrix_1a4a5436821ae1c3450d35803cb4d3c21d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_matrix" kindref="compound">Matrix</ref>&lt; Dimension &gt;</type>
+        <definition>Matrix&lt;Dimension&gt; Matrix&lt; Dimension &gt;::operator*</definition>
+        <argsstring>(Matrix&lt; Dimension &gt; &amp;matrix2)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type><ref refid="class_matrix" kindref="compound">Matrix</ref>&lt; Dimension &gt; &amp;</type>
+          <declname>matrix2</declname>
+        </param>
+        <briefdescription>
+<para>Mnozenie dwoch macierzy. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>matrix2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- drugi czynnik mnozenia, wymagane jest aby ten czynnik byl tych samych rozmiarow co pierwszy czynnik</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Matrix&lt;Dimension&gt; - przemnozona macierz </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kuba/obiekt/DronLvHard/prj/inc/matrix.hh" line="159" column="1" bodyfile="/home/kuba/obiekt/DronLvHard/prj/inc/matrix.hh" bodystart="159" bodyend="184"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Szablon modelujacy pojecie macierzy. </para>    </briefdescription>
+    <detaileddescription>
+<para>Szablon modeluje pojecie macierzy,do ktorej mozemy wpisac odpowiednie wartosci Dzieki przeciazeniu operatorow () mozemy bezposrednio odwolac sie do pol macierzy reprezentowanych jako tablica </para>    </detaileddescription>
+    <location file="/home/kuba/obiekt/DronLvHard/prj/inc/matrix.hh" line="25" column="1" bodyfile="/home/kuba/obiekt/DronLvHard/prj/inc/matrix.hh" bodystart="25" bodyend="186"/>
+    <listofallmembers>
+      <member refid="class_matrix_1a169e3264e9218b6881c8108db0cdf5c2" prot="private" virt="non-virtual"><scope>Matrix</scope><name>a</name></member>
+      <member refid="class_matrix_1ad3ddae5930748134cb331bf0bb508b86" prot="public" virt="non-virtual"><scope>Matrix</scope><name>Matrix</name></member>
+      <member refid="class_matrix_1afff1ac83775f029d4bf9e472fff2b27e" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator()</name></member>
+      <member refid="class_matrix_1a177a108c9b4631a0ef268c88b1aaf677" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator()</name></member>
+      <member refid="class_matrix_1a0db7f73a11fbe9a85d029d677c89582a" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator*</name></member>
+      <member refid="class_matrix_1a4a5436821ae1c3450d35803cb4d3c21d" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator*</name></member>
+      <member refid="class_matrix_1a25f743bb00f51eec66fc020f0600b2df" prot="public" virt="non-virtual"><scope>Matrix</scope><name>Type_In</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

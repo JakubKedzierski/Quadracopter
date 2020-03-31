@@ -1,0 +1,87 @@
+\hypertarget{class_hex_prism}{}\section{Hex\+Prism Class Reference}
+\label{class_hex_prism}\index{Hex\+Prism@{Hex\+Prism}}
+
+
+Klasa modelujaca pojecie graniastoslupow prawidlowych szesciokatnych.  
+
+
+
+
+{\ttfamily \#include $<$Hex\+Prism.\+hh$>$}
+
+Inheritance diagram for Hex\+Prism\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_hex_prism}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_hex_prism_a8360fd46ae716c1f5ba97f3213c3d223}{Hex\+Prism} (double x=0, double y=0, double z=0)
+\begin{DoxyCompactList}\small\item\em Stworzenie nowego obiektu z mozliwoscia ustalenia jego polozenia na plaszczyznie xy. \end{DoxyCompactList}\item 
+\hyperlink{vector3_d_8hh_a8790ef07836c1639da216f46501979c0}{Vector3D} \hyperlink{class_hex_prism_a9684bd167a9dcd710dbe227704bcb786}{Get\+Symetry\+Point} () const 
+\begin{DoxyCompactList}\small\item\em Pobranie srodka symetrii graniastoslupa. \end{DoxyCompactList}\item 
+void \hyperlink{class_hex_prism_a7d4bf4b9176fbb01146e74875d780626}{rotor} (bool side, \hyperlink{_hex_prism_8hh_ad57b3fa8e45359906ac229567c209a63}{Speed} speed)
+\begin{DoxyCompactList}\small\item\em Rotowanie smigla podczas lotu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Klasa wykorzystywana do sformulowania modelu smigla 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Hex\+Prism@{Hex\+Prism}!Hex\+Prism@{Hex\+Prism}}
+\index{Hex\+Prism@{Hex\+Prism}!Hex\+Prism@{Hex\+Prism}}
+\subsubsection[{\texorpdfstring{Hex\+Prism(double x=0, double y=0, double z=0)}{HexPrism(double x=0, double y=0, double z=0)}}]{\setlength{\rightskip}{0pt plus 5cm}Hex\+Prism\+::\+Hex\+Prism (
+\begin{DoxyParamCaption}
+\item[{double}]{x = {\ttfamily 0}, }
+\item[{double}]{y = {\ttfamily 0}, }
+\item[{double}]{z = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_hex_prism_a8360fd46ae716c1f5ba97f3213c3d223}{}\label{class_hex_prism_a8360fd46ae716c1f5ba97f3213c3d223}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & -\/ zmiana polozenia obiektu wedlug osi x \\
+\hline
+{\em y} & -\/ zmiana polozenia obiektu wedlug osi y \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Hex\+Prism@{Hex\+Prism}!Get\+Symetry\+Point@{Get\+Symetry\+Point}}
+\index{Get\+Symetry\+Point@{Get\+Symetry\+Point}!Hex\+Prism@{Hex\+Prism}}
+\subsubsection[{\texorpdfstring{Get\+Symetry\+Point() const }{GetSymetryPoint() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} Hex\+Prism\+::\+Get\+Symetry\+Point (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_hex_prism_a9684bd167a9dcd710dbe227704bcb786}{}\label{class_hex_prism_a9684bd167a9dcd710dbe227704bcb786}
+Metoda przydatna przy przesuwaniu wspolrzednych do ukladu wspolrzednych danego graniastoslupa szesciokatnego
+
+\begin{DoxyReturn}{Returns}
+Vector3D -\/ srodek symetri graniastoslupa 
+\end{DoxyReturn}
+\index{Hex\+Prism@{Hex\+Prism}!rotor@{rotor}}
+\index{rotor@{rotor}!Hex\+Prism@{Hex\+Prism}}
+\subsubsection[{\texorpdfstring{rotor(bool side, Speed speed)}{rotor(bool side, Speed speed)}}]{\setlength{\rightskip}{0pt plus 5cm}void Hex\+Prism\+::rotor (
+\begin{DoxyParamCaption}
+\item[{bool}]{side, }
+\item[{{\bf Speed}}]{speed}
+\end{DoxyParamCaption}
+)}\hypertarget{class_hex_prism_a7d4bf4b9176fbb01146e74875d780626}{}\label{class_hex_prism_a7d4bf4b9176fbb01146e74875d780626}
+Rotujac smiglo najpierw przesuwamy uklad wspolrzednych do ukladu wspolrzednych graniastoskupa szeciokatnego dokonujemy rotacji, a nastepnie przywracamy bazowy uklad wspolrzednych
+
+
+\begin{DoxyParams}{Parameters}
+{\em side} & -\/ zmienna pomocna do ustalenia kierunku obrotu \mbox{[}lewo/prawo\mbox{]} \\
+\hline
+{\em speed} & -\/ szybkosc obrotu smigla \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_hex_prism_8hh}{Hex\+Prism.\+hh}\item 
+\hyperlink{_hex_prism_8cpp}{Hex\+Prism.\+cpp}\end{DoxyCompactItemize}

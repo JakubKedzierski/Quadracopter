@@ -1,0 +1,146 @@
+\hypertarget{class_matrix}{}\section{Matrix$<$ Dimension $>$ Class Template Reference}
+\label{class_matrix}\index{Matrix$<$ Dimension $>$@{Matrix$<$ Dimension $>$}}
+
+
+Szablon modelujacy pojecie macierzy.  
+
+
+
+
+{\ttfamily \#include $<$matrix.\+hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \& \hyperlink{class_matrix_afff1ac83775f029d4bf9e472fff2b27e}{operator()} (int Index1, int Index2)
+\begin{DoxyCompactList}\small\item\em Pobranie wartosci danego pola macierzy. \end{DoxyCompactList}\item 
+double \hyperlink{class_matrix_a177a108c9b4631a0ef268c88b1aaf677}{operator()} (int Index1, int Index2) const 
+\begin{DoxyCompactList}\small\item\em Pobranie wartosci danego pola macierzy bez mozliwosci modyfikacji tego pola. \end{DoxyCompactList}\item 
+\hyperlink{class_matrix_ad3ddae5930748134cb331bf0bb508b86}{Matrix} ()
+\begin{DoxyCompactList}\small\item\em Stworzenie nowego obiektu macierzy z przypisaniem zerowych wartosci. \end{DoxyCompactList}\item 
+void \hyperlink{class_matrix_a25f743bb00f51eec66fc020f0600b2df}{Type\+\_\+\+In} (double alpha=1, char Choice\+Of\+Axix=\textquotesingle{}z\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em Wpsisanie odpowiednich wartosci do macierzy. \end{DoxyCompactList}\item 
+\hyperlink{vector3_d_8hh_a8790ef07836c1639da216f46501979c0}{Vector3D} \hyperlink{class_matrix_a0db7f73a11fbe9a85d029d677c89582a}{operator$\ast$} (\hyperlink{vector3_d_8hh_a8790ef07836c1639da216f46501979c0}{Vector3D} \&vector) const 
+\begin{DoxyCompactList}\small\item\em mnozenie wektora przez macierz \end{DoxyCompactList}\item 
+\hyperlink{class_matrix}{Matrix}$<$ Dimension $>$ \hyperlink{class_matrix_a4a5436821ae1c3450d35803cb4d3c21d}{operator$\ast$} (\hyperlink{class_matrix}{Matrix}$<$ Dimension $>$ \&matrix2)
+\begin{DoxyCompactList}\small\item\em Mnozenie dwoch macierzy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{class_matrix_a169e3264e9218b6881c8108db0cdf5c2}{a} \mbox{[}Dimension\mbox{]}\mbox{[}Dimension\mbox{]}
+\begin{DoxyCompactList}\small\item\em Wspolrzedne macierzy przechowywane w dwuwymiarowej tablicy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$int Dimension$>$\\*
+class Matrix$<$ Dimension $>$}
+
+Szablon modeluje pojecie macierzy,do ktorej mozemy wpisac odpowiednie wartosci Dzieki przeciazeniu operatorow () mozemy bezposrednio odwolac sie do pol macierzy reprezentowanych jako tablica 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Matrix@{Matrix}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!Matrix@{Matrix}}
+\subsubsection[{\texorpdfstring{Matrix()}{Matrix()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dimension$>$ {\bf Matrix}$<$ Dimension $>$\+::{\bf Matrix} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_matrix_ad3ddae5930748134cb331bf0bb508b86}{}\label{class_matrix_ad3ddae5930748134cb331bf0bb508b86}
+
+
+\subsection{Member Function Documentation}
+\index{Matrix@{Matrix}!operator()@{operator()}}
+\index{operator()@{operator()}!Matrix@{Matrix}}
+\subsubsection[{\texorpdfstring{operator()(int Index1, int Index2)}{operator()(int Index1, int Index2)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dimension$>$ double\& {\bf Matrix}$<$ Dimension $>$\+::operator() (
+\begin{DoxyParamCaption}
+\item[{int}]{Index1, }
+\item[{int}]{Index2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_matrix_afff1ac83775f029d4bf9e472fff2b27e}{}\label{class_matrix_afff1ac83775f029d4bf9e472fff2b27e}
+
+\begin{DoxyParams}{Parameters}
+{\em Index1} & -\/ wiersz \\
+\hline
+{\em Index2} & -\/ kolumna \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double\& -\/ wartosc w danym polu, z mozliwoscia zmianny 
+\end{DoxyReturn}
+\index{Matrix@{Matrix}!operator()@{operator()}}
+\index{operator()@{operator()}!Matrix@{Matrix}}
+\subsubsection[{\texorpdfstring{operator()(int Index1, int Index2) const }{operator()(int Index1, int Index2) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dimension$>$ double {\bf Matrix}$<$ Dimension $>$\+::operator() (
+\begin{DoxyParamCaption}
+\item[{int}]{Index1, }
+\item[{int}]{Index2}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_matrix_a177a108c9b4631a0ef268c88b1aaf677}{}\label{class_matrix_a177a108c9b4631a0ef268c88b1aaf677}
+
+\begin{DoxyParams}{Parameters}
+{\em Index1} & -\/ wiersz \\
+\hline
+{\em Index2} & -\/ kolumna \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double -\/ wartosc danego pola macierzy bez mozliwosci modyfikacji 
+\end{DoxyReturn}
+\index{Matrix@{Matrix}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Matrix@{Matrix}}
+\subsubsection[{\texorpdfstring{operator$\ast$(\+Vector3\+D \&vector) const }{operator*(Vector3D &vector) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dimension$>$ {\bf Vector3D} {\bf Matrix}$<$ Dimension $>$\+::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3D} \&}]{vector}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_matrix_a0db7f73a11fbe9a85d029d677c89582a}{}\label{class_matrix_a0db7f73a11fbe9a85d029d677c89582a}
+mnozenie wektora przez macierz obrotu do ustalenia wspolrzednych po operacji rotacji
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector} & -\/ mnozony wektor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector3D -\/ przemnozony wektor 
+\end{DoxyReturn}
+\index{Matrix@{Matrix}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Matrix@{Matrix}}
+\subsubsection[{\texorpdfstring{operator$\ast$(\+Matrix$<$ Dimension $>$ \&matrix2)}{operator*(Matrix< Dimension > &matrix2)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dimension$>$ {\bf Matrix}$<$Dimension$>$ {\bf Matrix}$<$ Dimension $>$\+::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix}$<$ Dimension $>$ \&}]{matrix2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_matrix_a4a5436821ae1c3450d35803cb4d3c21d}{}\label{class_matrix_a4a5436821ae1c3450d35803cb4d3c21d}
+
+\begin{DoxyParams}{Parameters}
+{\em matrix2} & -\/ drugi czynnik mnozenia, wymagane jest aby ten czynnik byl tych samych rozmiarow co pierwszy czynnik\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Matrix$<$\+Dimension$>$ -\/ przemnozona macierz 
+\end{DoxyReturn}
+\index{Matrix@{Matrix}!Type\+\_\+\+In@{Type\+\_\+\+In}}
+\index{Type\+\_\+\+In@{Type\+\_\+\+In}!Matrix@{Matrix}}
+\subsubsection[{\texorpdfstring{Type\+\_\+\+In(double alpha=1, char Choice\+Of\+Axix=\textquotesingle{}z\textquotesingle{})}{Type_In(double alpha=1, char ChoiceOfAxix='z')}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dimension$>$ void {\bf Matrix}$<$ Dimension $>$\+::Type\+\_\+\+In (
+\begin{DoxyParamCaption}
+\item[{double}]{alpha = {\ttfamily 1}, }
+\item[{char}]{Choice\+Of\+Axix = {\ttfamily \textquotesingle{}z\textquotesingle{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_matrix_a25f743bb00f51eec66fc020f0600b2df}{}\label{class_matrix_a25f743bb00f51eec66fc020f0600b2df}
+Funkcja na potrzeby macierzy 3 wymiarowej. Umozliwia wpisanie odpowiedniej macierzy obrotu(dla kazdej osi wartosci macierzy obrotu sa inne)
+
+
+\begin{DoxyParams}{Parameters}
+{\em alpha} & -\/ kat obrotu \\
+\hline
+{\em Choice\+Of\+Axix} & -\/ wybor osi obrotu \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\index{Matrix@{Matrix}!a@{a}}
+\index{a@{a}!Matrix@{Matrix}}
+\subsubsection[{\texorpdfstring{a}{a}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int Dimension$>$ double {\bf Matrix}$<$ Dimension $>$\+::a\mbox{[}Dimension\mbox{]}\mbox{[}Dimension\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_matrix_a169e3264e9218b6881c8108db0cdf5c2}{}\label{class_matrix_a169e3264e9218b6881c8108db0cdf5c2}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{matrix_8hh}{matrix.\+hh}\end{DoxyCompactItemize}

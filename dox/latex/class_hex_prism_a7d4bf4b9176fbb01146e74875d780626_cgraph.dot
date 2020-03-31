@@ -1,0 +1,9 @@
+digraph "HexPrism::rotor"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="HexPrism::rotor",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Matrix::Type_In",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_matrix.html#a25f743bb00f51eec66fc020f0600b2df",tooltip="Wpsisanie odpowiednich wartosci do macierzy. "];
+}

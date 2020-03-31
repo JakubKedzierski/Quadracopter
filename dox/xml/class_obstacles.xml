@@ -1,0 +1,243 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_obstacles" kind="class" language="C++" prot="public">
+    <compoundname>Obstacles</compoundname>
+    <basecompoundref refid="class_object_of_scene" prot="public" virt="non-virtual">ObjectOfScene</basecompoundref>
+    <includes refid="_obstacles_8hh" local="no">Obstacles.hh</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_obstacles_1a524ef2c37e9160887bd20780d68cff76" prot="private" static="no" mutable="no">
+        <type><ref refid="class_cuboid" kindref="compound">Cuboid</ref></type>
+        <definition>Cuboid Obstacles::cub</definition>
+        <argsstring></argsstring>
+        <name>cub</name>
+        <briefdescription>
+<para>Przeszkody sa wizualizowane za pomoca prostopadloscianow. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kuba/obiekt/DronLvHard/prj/inc/Obstacles.hh" line="15" column="1" bodyfile="/home/kuba/obiekt/DronLvHard/prj/inc/Obstacles.hh" bodystart="15" bodyend="-1"/>
+        <referencedby refid="class_obstacles_1a28b7f32500e1e58465ef5dc9e2d63ec1" compoundref="_obstacles_8cpp" startline="4" endline="11">Obstacles</referencedby>
+        <referencedby refid="class_obstacles_1a873ae714db7bf22195867aed06e72227" compoundref="_obstacles_8cpp" startline="21" endline="36">IfCollision</referencedby>
+        <referencedby refid="class_obstacles_1aacee9a8a19128a528e2b236485030128" compoundref="_obstacles_8hh" startline="38" endline="38">GetObstacle</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_obstacles_1a51c7f97c28a251ab75d711b23d9fe8e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Obstacles::Obstacles</definition>
+        <argsstring>()</argsstring>
+        <name>Obstacles</name>
+        <briefdescription>
+<para>Construct a new <ref refid="class_obstacles" kindref="compound">Obstacles</ref> object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kuba/obiekt/DronLvHard/prj/inc/Obstacles.hh" line="22" column="1" bodyfile="/home/kuba/obiekt/DronLvHard/prj/inc/Obstacles.hh" bodystart="22" bodyend="22"/>
+        <references refid="class_object_of_scene_1a3940aba3014aefed326cdc4301333af1" compoundref="_object_of_scene_8hh" startline="19">ObjectOfScene::symetry</references>
+        <references refid="class_cuboid_1a1bd1aaaa5b60441acf5d75c56a7f3b53" compoundref="cuboid_8cpp" startline="106" endline="114">Cuboid::GetSymetryPoint</references>
+      </memberdef>
+      <memberdef kind="function" id="class_obstacles_1a28b7f32500e1e58465ef5dc9e2d63ec1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Obstacles::Obstacles</definition>
+        <argsstring>(Vector3D centre, Vector3D size)</argsstring>
+        <name>Obstacles</name>
+        <param>
+          <type><ref refid="vector3_d_8hh_1a8790ef07836c1639da216f46501979c0" kindref="member">Vector3D</ref></type>
+          <declname>centre</declname>
+        </param>
+        <param>
+          <type><ref refid="vector3_d_8hh_1a8790ef07836c1639da216f46501979c0" kindref="member">Vector3D</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="class_obstacles" kindref="compound">Obstacles</ref> object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>centre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- srodek symetrii przeszkody </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- rozmiary przeszkody </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kuba/obiekt/DronLvHard/prj/inc/Obstacles.hh" line="30" column="1" bodyfile="/home/kuba/obiekt/DronLvHard/prj/src/Obstacles.cpp" bodystart="4" bodyend="11"/>
+        <references refid="class_obstacles_1a524ef2c37e9160887bd20780d68cff76" compoundref="_obstacles_8hh" startline="15">cub</references>
+        <references refid="class_object_of_scene_1a3940aba3014aefed326cdc4301333af1" compoundref="_object_of_scene_8hh" startline="19">ObjectOfScene::symetry</references>
+      </memberdef>
+      <memberdef kind="function" id="class_obstacles_1aacee9a8a19128a528e2b236485030128" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_cuboid" kindref="compound">Cuboid</ref></type>
+        <definition>Cuboid Obstacles::GetObstacle</definition>
+        <argsstring>()</argsstring>
+        <name>GetObstacle</name>
+        <briefdescription>
+<para>Dobranie sie do przeszkody. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- numer przeszkody </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="class_cuboid" kindref="compound">Cuboid</ref> - przeszkoda </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kuba/obiekt/DronLvHard/prj/inc/Obstacles.hh" line="38" column="1" bodyfile="/home/kuba/obiekt/DronLvHard/prj/inc/Obstacles.hh" bodystart="38" bodyend="38"/>
+        <references refid="class_obstacles_1a524ef2c37e9160887bd20780d68cff76" compoundref="_obstacles_8hh" startline="15">cub</references>
+        <references refid="class_obstacles_1a873ae714db7bf22195867aed06e72227" compoundref="_obstacles_8cpp" startline="21" endline="36">IfCollision</references>
+        <references refid="class_obstacles_1a41b1c2255c6230514fb6a91afb5f8f7b" compoundref="_obstacles_8cpp" startline="38" endline="43">WriteToFile</references>
+        <references refid="_obstacles_8hh_1af613d14f05d96def1c41bf5c73c372ad" compoundref="_obstacles_8cpp" startline="13" endline="19">operator&lt;&lt;</references>
+        <referencedby refid="_obstacles_8cpp_1a339db866e755b353993742f764a7e994" compoundref="_obstacles_8cpp" startline="13" endline="19">operator&lt;&lt;</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_obstacles_1a873ae714db7bf22195867aed06e72227" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Obstacles::IfCollision</definition>
+        <argsstring>(Vector3D PhysicalPoint, double radius) const </argsstring>
+        <name>IfCollision</name>
+        <reimplements refid="class_object_of_scene_1ab58c09e26c9c6016fe86dcbd1b76df00">IfCollision</reimplements>
+        <param>
+          <type><ref refid="vector3_d_8hh_1a8790ef07836c1639da216f46501979c0" kindref="member">Vector3D</ref></type>
+          <declname>PhysicalPoint</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>radius</declname>
+        </param>
+        <briefdescription>
+<para>Sprawdzanie kolizji z obiektami. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>PhysicalPoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- srodek symetri wybranego drona </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>radius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- promien walca przyblizajacego </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true - detekcja kolizji </para></simplesect>
+<simplesect kind="return"><para>false - nie ma kolizji </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kuba/obiekt/DronLvHard/prj/inc/Obstacles.hh" line="48" column="1" bodyfile="/home/kuba/obiekt/DronLvHard/prj/src/Obstacles.cpp" bodystart="21" bodyend="36"/>
+        <references refid="class_obstacles_1a524ef2c37e9160887bd20780d68cff76" compoundref="_obstacles_8hh" startline="15">cub</references>
+        <referencedby refid="class_obstacles_1aacee9a8a19128a528e2b236485030128" compoundref="_obstacles_8hh" startline="38" endline="38">GetObstacle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_obstacles_1a41b1c2255c6230514fb6a91afb5f8f7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Obstacles::WriteToFile</definition>
+        <argsstring>(ofstream &amp;stream)</argsstring>
+        <name>WriteToFile</name>
+        <reimplements refid="class_object_of_scene_1a79bbabdf7e17459475bf30856cf176aa">WriteToFile</reimplements>
+        <param>
+          <type>ofstream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+<para>Zapis przeszkody do pliku. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- strumien do zapisu </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true - udany zapis </para></simplesect>
+<simplesect kind="return"><para>false - nieudany zapis </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kuba/obiekt/DronLvHard/prj/inc/Obstacles.hh" line="57" column="1" bodyfile="/home/kuba/obiekt/DronLvHard/prj/src/Obstacles.cpp" bodystart="38" bodyend="43"/>
+        <referencedby refid="class_obstacles_1aacee9a8a19128a528e2b236485030128" compoundref="_obstacles_8hh" startline="38" endline="38">GetObstacle</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Klasa modeluje pojecie przeszkody na scenie. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="23">
+        <label>Obstacles</label>
+        <link refid="class_obstacles"/>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>ObjectOfScene</label>
+        <link refid="class_object_of_scene"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="28">
+        <label>Cuboid</label>
+        <link refid="class_cuboid"/>
+        <childnode refid="29" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>Obstacles</label>
+        <link refid="class_obstacles"/>
+        <childnode refid="26" relation="public-inheritance">
+        </childnode>
+        <childnode refid="28" relation="usage">
+          <edgelabel>cub</edgelabel>
+        </childnode>
+      </node>
+      <node id="29">
+        <label>figures3D</label>
+        <link refid="classfigures3_d"/>
+      </node>
+      <node id="27">
+        <label>Vector&lt; double, 3 &gt;</label>
+        <link refid="class_vector"/>
+      </node>
+      <node id="26">
+        <label>ObjectOfScene</label>
+        <link refid="class_object_of_scene"/>
+        <childnode refid="27" relation="usage">
+          <edgelabel>symetry</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/kuba/obiekt/DronLvHard/prj/inc/Obstacles.hh" line="9" column="1" bodyfile="/home/kuba/obiekt/DronLvHard/prj/inc/Obstacles.hh" bodystart="9" bodyend="59"/>
+    <listofallmembers>
+      <member refid="class_object_of_scene_1a4f29f829eca02965019b1d0bc28f3af1" prot="public" virt="non-virtual"><scope>Obstacles</scope><name>AddCounter</name></member>
+      <member refid="class_object_of_scene_1ae1b26e0c68453235a991601aa8f8c8e5" prot="public" virt="non-virtual"><scope>Obstacles</scope><name>counterS</name></member>
+      <member refid="class_obstacles_1a524ef2c37e9160887bd20780d68cff76" prot="private" virt="non-virtual"><scope>Obstacles</scope><name>cub</name></member>
+      <member refid="class_obstacles_1aacee9a8a19128a528e2b236485030128" prot="public" virt="non-virtual"><scope>Obstacles</scope><name>GetObstacle</name></member>
+      <member refid="class_object_of_scene_1a1a2714bc1777bd167536f760fcd6c417" prot="public" virt="non-virtual"><scope>Obstacles</scope><name>GetSymetry</name></member>
+      <member refid="class_object_of_scene_1a94770327cfa3c391fbf6b8e4f9635248" prot="public" virt="non-virtual"><scope>Obstacles</scope><name>HowManyScene</name></member>
+      <member refid="class_obstacles_1a873ae714db7bf22195867aed06e72227" prot="public" virt="virtual"><scope>Obstacles</scope><name>IfCollision</name></member>
+      <member refid="class_object_of_scene_1a248118c01bc3c0b3df93bcc8ff4c169d" prot="public" virt="non-virtual"><scope>Obstacles</scope><name>ObjectOfScene</name></member>
+      <member refid="class_object_of_scene_1a9dae6b015fdf9354b8f49235d10c439e" prot="public" virt="non-virtual"><scope>Obstacles</scope><name>ObjectOfScene</name></member>
+      <member refid="class_obstacles_1a51c7f97c28a251ab75d711b23d9fe8e1" prot="public" virt="non-virtual"><scope>Obstacles</scope><name>Obstacles</name></member>
+      <member refid="class_obstacles_1a28b7f32500e1e58465ef5dc9e2d63ec1" prot="public" virt="non-virtual"><scope>Obstacles</scope><name>Obstacles</name></member>
+      <member refid="class_object_of_scene_1a3940aba3014aefed326cdc4301333af1" prot="protected" virt="non-virtual"><scope>Obstacles</scope><name>symetry</name></member>
+      <member refid="class_obstacles_1a41b1c2255c6230514fb6a91afb5f8f7b" prot="public" virt="virtual"><scope>Obstacles</scope><name>WriteToFile</name></member>
+      <member refid="class_object_of_scene_1a1f973b6e583fe163630538a9da7caad8" prot="public" virt="virtual"><scope>Obstacles</scope><name>~ObjectOfScene</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

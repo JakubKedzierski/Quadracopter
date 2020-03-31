@@ -1,0 +1,130 @@
+\hypertarget{main_8cpp}{}\section{main.\+cpp File Reference}
+\label{main_8cpp}\index{main.\+cpp@{main.\+cpp}}
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+{\ttfamily \#include $<$unistd.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}gnuplot\+\_\+link.\+hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Plant\+Of\+Obstacles.\+hh\char`\"{}}\\*
+{\ttfamily \#include $<$ncurses.\+h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{main_8cpp_ae4af580d871efa0e50ab5431cf4b5971}{Write\+To\+File} (\hyperlink{classscene}{scene} Whole\+Scene)
+\begin{DoxyCompactList}\small\item\em Zapis danych do pliku. \end{DoxyCompactList}\item 
+void \hyperlink{main_8cpp_a632368ccd119d49b4fa1dc265ed984d4}{Print\+Menu} ()
+\begin{DoxyCompactList}\small\item\em Wypisanie menu. \end{DoxyCompactList}\item 
+int \hyperlink{main_8cpp_a28e36d05d414154c7bc930f9dfcaf7f4}{Count\+Seconds\+Of\+Frame} (\hyperlink{_hex_prism_8hh_ad57b3fa8e45359906ac229567c209a63}{Speed} speed)
+\begin{DoxyCompactList}\small\item\em Policzenie sekund klatki. \end{DoxyCompactList}\item 
+int \hyperlink{main_8cpp_ae6f911847aa1576987a4a55da84635c8}{Change\+Orientation} (\hyperlink{class_pz_g_1_1_gnuplot_link}{Pz\+G\+::\+Gnuplot\+Link} link, \hyperlink{classscene}{scene} \&Whole\+Scene, \hyperlink{class_quadracopter}{Quadracopter} \&quadro)
+\begin{DoxyCompactList}\small\item\em Zmiana orientacji drona. \end{DoxyCompactList}\item 
+void \hyperlink{main_8cpp_af3c417e2bc34f974587aca23a435f604}{Do\+It} (\hyperlink{class_pz_g_1_1_gnuplot_link}{Pz\+G\+::\+Gnuplot\+Link} link, \hyperlink{classscene}{scene} \&Whole\+Scene, \hyperlink{class_quadracopter}{Quadracopter} \&quadro, \hyperlink{vector3_d_8hh_a8790ef07836c1639da216f46501979c0}{Vector3D} vec)
+\begin{DoxyCompactList}\small\item\em Ruch w game mode. \end{DoxyCompactList}\item 
+int \hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const int \hyperlink{main_8cpp_aa683aff40947a33f80a849a7a9149ad4}{k\+Film\+Frame} = 300
+\item 
+const char $\ast$ \hyperlink{main_8cpp_ace5060f1ff5b8bfb33b593368ed20519}{mainbody} = \char`\"{}./dat/cuboid.\+dat\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{main.\+cpp@{main.\+cpp}!Change\+Orientation@{Change\+Orientation}}
+\index{Change\+Orientation@{Change\+Orientation}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{\texorpdfstring{Change\+Orientation(\+Pz\+G\+::\+Gnuplot\+Link link, scene \&\+Whole\+Scene, Quadracopter \&quadro)}{ChangeOrientation(PzG::GnuplotLink link, scene &WholeScene, Quadracopter &quadro)}}]{\setlength{\rightskip}{0pt plus 5cm}int Change\+Orientation (
+\begin{DoxyParamCaption}
+\item[{{\bf Pz\+G\+::\+Gnuplot\+Link}}]{link, }
+\item[{{\bf scene} \&}]{Whole\+Scene, }
+\item[{{\bf Quadracopter} \&}]{quadro}
+\end{DoxyParamCaption}
+)}\hypertarget{main_8cpp_ae6f911847aa1576987a4a55da84635c8}{}\label{main_8cpp_ae6f911847aa1576987a4a55da84635c8}
+
+\begin{DoxyParams}{Parameters}
+{\em link} & -\/ link Gnuplota \\
+\hline
+{\em Whole\+Scene} & -\/ cala scena \\
+\hline
+{\em quadro} & -\/ wybrany dron ktorym latamy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int -\/ 0 -\/ udalo sie 1-\/ nie udalo sie 
+\end{DoxyReturn}
+\index{main.\+cpp@{main.\+cpp}!Count\+Seconds\+Of\+Frame@{Count\+Seconds\+Of\+Frame}}
+\index{Count\+Seconds\+Of\+Frame@{Count\+Seconds\+Of\+Frame}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{\texorpdfstring{Count\+Seconds\+Of\+Frame(\+Speed speed)}{CountSecondsOfFrame(Speed speed)}}]{\setlength{\rightskip}{0pt plus 5cm}int Count\+Seconds\+Of\+Frame (
+\begin{DoxyParamCaption}
+\item[{{\bf Speed}}]{speed}
+\end{DoxyParamCaption}
+)}\hypertarget{main_8cpp_a28e36d05d414154c7bc930f9dfcaf7f4}{}\label{main_8cpp_a28e36d05d414154c7bc930f9dfcaf7f4}
+
+\begin{DoxyParams}{Parameters}
+{\em speed} & -\/ szybkosc ruchu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int -\/ czas trwania klatki ( dla wrazenia szykosci) 
+\end{DoxyReturn}
+\index{main.\+cpp@{main.\+cpp}!Do\+It@{Do\+It}}
+\index{Do\+It@{Do\+It}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{\texorpdfstring{Do\+It(\+Pz\+G\+::\+Gnuplot\+Link link, scene \&\+Whole\+Scene, Quadracopter \&quadro, Vector3\+D vec)}{DoIt(PzG::GnuplotLink link, scene &WholeScene, Quadracopter &quadro, Vector3D vec)}}]{\setlength{\rightskip}{0pt plus 5cm}void Do\+It (
+\begin{DoxyParamCaption}
+\item[{{\bf Pz\+G\+::\+Gnuplot\+Link}}]{link, }
+\item[{{\bf scene} \&}]{Whole\+Scene, }
+\item[{{\bf Quadracopter} \&}]{quadro, }
+\item[{{\bf Vector3D}}]{vec}
+\end{DoxyParamCaption}
+)}\hypertarget{main_8cpp_af3c417e2bc34f974587aca23a435f604}{}\label{main_8cpp_af3c417e2bc34f974587aca23a435f604}
+
+\begin{DoxyParams}{Parameters}
+{\em link} & -\/ link do gnuplota \\
+\hline
+{\em Whole\+Scene} & -\/ cala scena \\
+\hline
+{\em quadro} & -\/ dron ktorym latamy \\
+\hline
+{\em vec} & -\/ kierunek lotu \\
+\hline
+\end{DoxyParams}
+\index{main.\+cpp@{main.\+cpp}!main@{main}}
+\index{main@{main}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{\texorpdfstring{main()}{main()}}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}
+glowa petla interkacji z uzytkownikiem \index{main.\+cpp@{main.\+cpp}!Print\+Menu@{Print\+Menu}}
+\index{Print\+Menu@{Print\+Menu}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{\texorpdfstring{Print\+Menu()}{PrintMenu()}}]{\setlength{\rightskip}{0pt plus 5cm}void Print\+Menu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{main_8cpp_a632368ccd119d49b4fa1dc265ed984d4}{}\label{main_8cpp_a632368ccd119d49b4fa1dc265ed984d4}
+\index{main.\+cpp@{main.\+cpp}!Write\+To\+File@{Write\+To\+File}}
+\index{Write\+To\+File@{Write\+To\+File}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{\texorpdfstring{Write\+To\+File(scene Whole\+Scene)}{WriteToFile(scene WholeScene)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Write\+To\+File (
+\begin{DoxyParamCaption}
+\item[{{\bf scene}}]{Whole\+Scene}
+\end{DoxyParamCaption}
+)}\hypertarget{main_8cpp_ae4af580d871efa0e50ab5431cf4b5971}{}\label{main_8cpp_ae4af580d871efa0e50ab5431cf4b5971}
+
+\begin{DoxyParams}{Parameters}
+{\em quadro} & -\/ dron \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true -\/ udany zapis 
+
+false -\/ nieudany zapis 
+\end{DoxyReturn}
+
+
+\subsection{Variable Documentation}
+\index{main.\+cpp@{main.\+cpp}!k\+Film\+Frame@{k\+Film\+Frame}}
+\index{k\+Film\+Frame@{k\+Film\+Frame}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{\texorpdfstring{k\+Film\+Frame}{kFilmFrame}}]{\setlength{\rightskip}{0pt plus 5cm}const int k\+Film\+Frame = 300}\hypertarget{main_8cpp_aa683aff40947a33f80a849a7a9149ad4}{}\label{main_8cpp_aa683aff40947a33f80a849a7a9149ad4}
+\index{main.\+cpp@{main.\+cpp}!mainbody@{mainbody}}
+\index{mainbody@{mainbody}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{\texorpdfstring{mainbody}{mainbody}}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ mainbody = \char`\"{}./dat/cuboid.\+dat\char`\"{}}\hypertarget{main_8cpp_ace5060f1ff5b8bfb33b593368ed20519}{}\label{main_8cpp_ace5060f1ff5b8bfb33b593368ed20519}

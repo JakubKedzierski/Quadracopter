@@ -1,0 +1,105 @@
+\hypertarget{classfigures3_d}{}\section{figures3D Class Reference}
+\label{classfigures3_d}\index{figures3D@{figures3D}}
+
+
+Model szerokiego pojecia figury geometrycznej 3-\/wymiarowej, klasy nadrzednej.  
+
+
+
+
+{\ttfamily \#include $<$figures3\+D.\+hh$>$}
+
+Inheritance diagram for figures3D\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classfigures3_d}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{vector3_d_8hh_a8790ef07836c1639da216f46501979c0}{Vector3D} \& \hyperlink{classfigures3_d_af35b8d1711f6fe2738af86d2641ce5aa}{operator\mbox{[}$\,$\mbox{]}} (int Index)
+\begin{DoxyCompactList}\small\item\em Odwolanie do wierzcholka z mozliwa zmiana wartosci. \end{DoxyCompactList}\item 
+\hyperlink{vector3_d_8hh_a8790ef07836c1639da216f46501979c0}{Vector3D} \hyperlink{classfigures3_d_adee2c4a6f78ee8deb5b57194ef3025d8}{operator\mbox{[}$\,$\mbox{]}} (int Index) const 
+\begin{DoxyCompactList}\small\item\em Odowolanie do wierzcholka bez mozliwosci zmiany wartosci. \end{DoxyCompactList}\item 
+void \hyperlink{classfigures3_d_a630645770668a4a1b35762a311db39b8}{rotate} (\hyperlink{matrix3x3_8hh_ae0d6db325717593a1d1157ecfa156f13}{Matrix3x3} matrix)
+\begin{DoxyCompactList}\small\item\em Rotacja kazdego punktu nalezacego do figury. \end{DoxyCompactList}\item 
+void \hyperlink{classfigures3_d_a6fddc70b227f21d8c32b0f741b536b05}{Translate} (\hyperlink{vector3_d_8hh_a8790ef07836c1639da216f46501979c0}{Vector3D} offset)
+\begin{DoxyCompactList}\small\item\em translacja kazdego punktu nalezacego do danej figury \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \hyperlink{vector3_d_8hh_a8790ef07836c1639da216f46501979c0}{Vector3D} $>$ \hyperlink{classfigures3_d_a491e0281ce1e02aa7159840923cb3ef6}{P}
+\begin{DoxyCompactList}\small\item\em wierzcholki figury geometrycznej lub punkty nalezace do niej, mozna stworzyc dowolna ilosc wierzcholkow \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Plik zawiera model pojecia figury geometrycznej 3-\/wymiarowej Zawiera typowe atrybuty i metody ktore moze posiadac dowolna figura geometryczna 
+
+\subsection{Member Function Documentation}
+\index{figures3D@{figures3D}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!figures3D@{figures3D}}
+\subsubsection[{\texorpdfstring{operator[](int Index)}{operator[](int Index)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D}\& figures3\+D\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{int}]{Index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classfigures3_d_af35b8d1711f6fe2738af86d2641ce5aa}{}\label{classfigures3_d_af35b8d1711f6fe2738af86d2641ce5aa}
+
+\begin{DoxyParams}{Parameters}
+{\em Index} & -\/ indeks wierzcholka \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector3D\& -\/ zwracamy wierzcholek 
+\end{DoxyReturn}
+\index{figures3D@{figures3D}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!figures3D@{figures3D}}
+\subsubsection[{\texorpdfstring{operator[](int Index) const }{operator[](int Index) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3D} figures3\+D\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{int}]{Index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classfigures3_d_adee2c4a6f78ee8deb5b57194ef3025d8}{}\label{classfigures3_d_adee2c4a6f78ee8deb5b57194ef3025d8}
+
+\begin{DoxyParams}{Parameters}
+{\em Index} & -\/ indeks wierzcholka \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector3D -\/ zwracamy wierzcholek 
+\end{DoxyReturn}
+\index{figures3D@{figures3D}!rotate@{rotate}}
+\index{rotate@{rotate}!figures3D@{figures3D}}
+\subsubsection[{\texorpdfstring{rotate(\+Matrix3x3 matrix)}{rotate(Matrix3x3 matrix)}}]{\setlength{\rightskip}{0pt plus 5cm}void figures3\+D\+::rotate (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix3x3}}]{matrix}
+\end{DoxyParamCaption}
+)}\hypertarget{classfigures3_d_a630645770668a4a1b35762a311db39b8}{}\label{classfigures3_d_a630645770668a4a1b35762a311db39b8}
+
+\begin{DoxyParams}{Parameters}
+{\em matrix} & -\/ macierz obrotu \\
+\hline
+\end{DoxyParams}
+\index{figures3D@{figures3D}!Translate@{Translate}}
+\index{Translate@{Translate}!figures3D@{figures3D}}
+\subsubsection[{\texorpdfstring{Translate(\+Vector3\+D offset)}{Translate(Vector3D offset)}}]{\setlength{\rightskip}{0pt plus 5cm}void figures3\+D\+::\+Translate (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3D}}]{offset}
+\end{DoxyParamCaption}
+)}\hypertarget{classfigures3_d_a6fddc70b227f21d8c32b0f741b536b05}{}\label{classfigures3_d_a6fddc70b227f21d8c32b0f741b536b05}
+
+\begin{DoxyParams}{Parameters}
+{\em offset} & -\/zadany wektor translacji \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\index{figures3D@{figures3D}!P@{P}}
+\index{P@{P}!figures3D@{figures3D}}
+\subsubsection[{\texorpdfstring{P}{P}}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Vector3D}$>$ figures3\+D\+::P\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classfigures3_d_a491e0281ce1e02aa7159840923cb3ef6}{}\label{classfigures3_d_a491e0281ce1e02aa7159840923cb3ef6}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{figures3_d_8hh}{figures3\+D.\+hh}\item 
+\hyperlink{figures3_d_8cpp}{figures3\+D.\+cpp}\end{DoxyCompactItemize}

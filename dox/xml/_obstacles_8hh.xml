@@ -1,0 +1,216 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_obstacles_8hh" kind="file" language="C++">
+    <compoundname>Obstacles.hh</compoundname>
+    <includes refid="_object_of_scene_8hh" local="yes">ObjectOfScene.hh</includes>
+    <includes refid="cuboid_8hh" local="yes">cuboid.hh</includes>
+    <includedby refid="scene_8hh" local="yes">scene.hh</includedby>
+    <includedby refid="_obstacles_8cpp" local="yes">Obstacles.cpp</includedby>
+    <incdepgraph>
+      <node id="251">
+        <label>iomanip</label>
+      </node>
+      <node id="252">
+        <label>cuboid.hh</label>
+        <link refid="cuboid_8hh"/>
+        <childnode refid="248" relation="include">
+        </childnode>
+        <childnode refid="249" relation="include">
+        </childnode>
+        <childnode refid="253" relation="include">
+        </childnode>
+        <childnode refid="254" relation="include">
+        </childnode>
+        <childnode refid="256" relation="include">
+        </childnode>
+      </node>
+      <node id="256">
+        <label>figures3D.hh</label>
+        <link refid="figures3_d_8hh"/>
+        <childnode refid="257" relation="include">
+        </childnode>
+        <childnode refid="247" relation="include">
+        </childnode>
+        <childnode refid="254" relation="include">
+        </childnode>
+      </node>
+      <node id="250">
+        <label>vector.hh</label>
+        <link refid="vector_8hh"/>
+        <childnode refid="248" relation="include">
+        </childnode>
+        <childnode refid="251" relation="include">
+        </childnode>
+      </node>
+      <node id="253">
+        <label>cmath</label>
+      </node>
+      <node id="247">
+        <label>vector3D.hh</label>
+        <link refid="vector3_d_8hh"/>
+        <childnode refid="248" relation="include">
+        </childnode>
+        <childnode refid="249" relation="include">
+        </childnode>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="249">
+        <label>fstream</label>
+      </node>
+      <node id="245">
+        <label>Obstacles.hh</label>
+        <link refid="Obstacles.hh"/>
+        <childnode refid="246" relation="include">
+        </childnode>
+        <childnode refid="252" relation="include">
+        </childnode>
+      </node>
+      <node id="246">
+        <label>ObjectOfScene.hh</label>
+        <link refid="_object_of_scene_8hh"/>
+        <childnode refid="247" relation="include">
+        </childnode>
+      </node>
+      <node id="257">
+        <label>vector</label>
+      </node>
+      <node id="255">
+        <label>matrix.hh</label>
+        <link refid="matrix_8hh"/>
+        <childnode refid="247" relation="include">
+        </childnode>
+        <childnode refid="248" relation="include">
+        </childnode>
+        <childnode refid="253" relation="include">
+        </childnode>
+      </node>
+      <node id="254">
+        <label>matrix3x3.hh</label>
+        <link refid="matrix3x3_8hh"/>
+        <childnode refid="248" relation="include">
+        </childnode>
+        <childnode refid="255" relation="include">
+        </childnode>
+        <childnode refid="247" relation="include">
+        </childnode>
+      </node>
+      <node id="248">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="260">
+        <label>PlantOfObstacles.hh</label>
+        <link refid="_plant_of_obstacles_8hh"/>
+        <childnode refid="261" relation="include">
+        </childnode>
+        <childnode refid="262" relation="include">
+        </childnode>
+      </node>
+      <node id="264">
+        <label>Obstacles.cpp</label>
+        <link refid="_obstacles_8cpp"/>
+      </node>
+      <node id="258">
+        <label>Obstacles.hh</label>
+        <link refid="Obstacles.hh"/>
+        <childnode refid="259" relation="include">
+        </childnode>
+        <childnode refid="264" relation="include">
+        </childnode>
+      </node>
+      <node id="259">
+        <label>scene.hh</label>
+        <link refid="scene_8hh"/>
+        <childnode refid="260" relation="include">
+        </childnode>
+        <childnode refid="263" relation="include">
+        </childnode>
+      </node>
+      <node id="263">
+        <label>scene.cpp</label>
+        <link refid="scene_8cpp"/>
+      </node>
+      <node id="261">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="262">
+        <label>PlantOfObstacles.cpp</label>
+        <link refid="_plant_of_obstacles_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_obstacles" prot="public">Obstacles</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_obstacles_8hh_1af613d14f05d96def1c41bf5c73c372ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ofstream &amp;</type>
+        <definition>std::ofstream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ofstream &amp;output_ofstream, Obstacles &amp;obs)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ofstream &amp;</type>
+          <declname>output_ofstream</declname>
+        </param>
+        <param>
+          <type><ref refid="class_obstacles" kindref="compound">Obstacles</ref> &amp;</type>
+          <declname>obs</declname>
+        </param>
+        <briefdescription>
+<para>Zapis przeszkod. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>output_ofstream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- stumien do zapisu </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- przeszkody </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::ofstream&amp; - stumien z zapisanymi danymi </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kuba/obiekt/DronLvHard/prj/inc/Obstacles.hh" line="68" column="1" bodyfile="/home/kuba/obiekt/DronLvHard/prj/src/Obstacles.cpp" bodystart="13" bodyend="19"/>
+        <references refid="class_obstacles_1aacee9a8a19128a528e2b236485030128" compoundref="_obstacles_8hh" startline="38" endline="38">Obstacles::GetObstacle</references>
+        <referencedby refid="class_obstacles_1aacee9a8a19128a528e2b236485030128" compoundref="_obstacles_8hh" startline="38" endline="38">Obstacles::GetObstacle</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_object_of_scene_8hh" kindref="compound">ObjectOfScene.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="cuboid_8hh" kindref="compound">cuboid.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="class_obstacles" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_obstacles" kindref="compound">Obstacles</ref>:</highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_object_of_scene" kindref="compound">ObjectOfScene</ref>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="class_obstacles_1a524ef2c37e9160887bd20780d68cff76" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_cuboid" kindref="compound">Cuboid</ref><sp/><ref refid="class_obstacles_1a524ef2c37e9160887bd20780d68cff76" kindref="member">cub</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22" refid="class_obstacles_1a51c7f97c28a251ab75d711b23d9fe8e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_obstacles_1a51c7f97c28a251ab75d711b23d9fe8e1" kindref="member">Obstacles</ref>(){<ref refid="class_cuboid" kindref="compound">Cuboid</ref><sp/>one;cub=one;<ref refid="class_object_of_scene_1a3940aba3014aefed326cdc4301333af1" kindref="member">symetry</ref>=one.<ref refid="class_cuboid_1a1bd1aaaa5b60441acf5d75c56a7f3b53" kindref="member">GetSymetryPoint</ref>();}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_obstacles_1a51c7f97c28a251ab75d711b23d9fe8e1" kindref="member">Obstacles</ref>(<ref refid="class_vector" kindref="compound">Vector3D</ref><sp/>centre,<ref refid="class_vector" kindref="compound">Vector3D</ref><sp/>size);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="class_obstacles_1aacee9a8a19128a528e2b236485030128" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_cuboid" kindref="compound">Cuboid</ref><sp/><ref refid="class_obstacles_1aacee9a8a19128a528e2b236485030128" kindref="member">GetObstacle</ref><sp/>(){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_obstacles_1a524ef2c37e9160887bd20780d68cff76" kindref="member">cub</ref>;}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_obstacles_1a873ae714db7bf22195867aed06e72227" kindref="member">IfCollision</ref>(<ref refid="class_vector" kindref="compound">Vector3D</ref><sp/>PhysicalPoint,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>radius)</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_obstacles_1a41b1c2255c6230514fb6a91afb5f8f7b" kindref="member">WriteToFile</ref>(ofstream<sp/>&amp;stream);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal">std::ofstream&amp;<sp/><ref refid="_obstacles_8hh_1af613d14f05d96def1c41bf5c73c372ad" kindref="member">operator &lt;&lt; </ref>(std::ofstream<sp/>&amp;<sp/>output_ofstream,<sp/><ref refid="class_obstacles" kindref="compound">Obstacles</ref><sp/>&amp;obs);</highlight></codeline>
+    </programlisting>
+    <location file="/home/kuba/obiekt/DronLvHard/prj/inc/Obstacles.hh"/>
+  </compounddef>
+</doxygen>

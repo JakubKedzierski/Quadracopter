@@ -1,0 +1,349 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_quadracopter_8cpp" kind="file" language="C++">
+    <compoundname>Quadracopter.cpp</compoundname>
+    <includes refid="_quadracopter_8hh" local="yes">Quadracopter.hh</includes>
+    <incdepgraph>
+      <node id="327">
+        <label>list</label>
+      </node>
+      <node id="322">
+        <label>iomanip</label>
+      </node>
+      <node id="316">
+        <label>cuboid.hh</label>
+        <link refid="cuboid_8hh"/>
+        <childnode refid="314" relation="include">
+        </childnode>
+        <childnode refid="315" relation="include">
+        </childnode>
+        <childnode refid="317" relation="include">
+        </childnode>
+        <childnode refid="318" relation="include">
+        </childnode>
+        <childnode refid="323" relation="include">
+        </childnode>
+      </node>
+      <node id="323">
+        <label>figures3D.hh</label>
+        <link refid="figures3_d_8hh"/>
+        <childnode refid="324" relation="include">
+        </childnode>
+        <childnode refid="320" relation="include">
+        </childnode>
+        <childnode refid="318" relation="include">
+        </childnode>
+      </node>
+      <node id="321">
+        <label>vector.hh</label>
+        <link refid="vector_8hh"/>
+        <childnode refid="314" relation="include">
+        </childnode>
+        <childnode refid="322" relation="include">
+        </childnode>
+      </node>
+      <node id="317">
+        <label>cmath</label>
+      </node>
+      <node id="320">
+        <label>vector3D.hh</label>
+        <link refid="vector3_d_8hh"/>
+        <childnode refid="314" relation="include">
+        </childnode>
+        <childnode refid="315" relation="include">
+        </childnode>
+        <childnode refid="321" relation="include">
+        </childnode>
+      </node>
+      <node id="313">
+        <label>Quadracopter.hh</label>
+        <link refid="_quadracopter_8hh"/>
+        <childnode refid="314" relation="include">
+        </childnode>
+        <childnode refid="315" relation="include">
+        </childnode>
+        <childnode refid="316" relation="include">
+        </childnode>
+        <childnode refid="325" relation="include">
+        </childnode>
+        <childnode refid="324" relation="include">
+        </childnode>
+        <childnode refid="322" relation="include">
+        </childnode>
+        <childnode refid="317" relation="include">
+        </childnode>
+        <childnode refid="326" relation="include">
+        </childnode>
+        <childnode refid="327" relation="include">
+        </childnode>
+        <childnode refid="328" relation="include">
+        </childnode>
+      </node>
+      <node id="315">
+        <label>fstream</label>
+      </node>
+      <node id="312">
+        <label>Quadracopter.cpp</label>
+        <link refid="Quadracopter.cpp"/>
+        <childnode refid="313" relation="include">
+        </childnode>
+      </node>
+      <node id="326">
+        <label>ObjectOfScene.hh</label>
+        <link refid="_object_of_scene_8hh"/>
+        <childnode refid="320" relation="include">
+        </childnode>
+      </node>
+      <node id="324">
+        <label>vector</label>
+      </node>
+      <node id="319">
+        <label>matrix.hh</label>
+        <link refid="matrix_8hh"/>
+        <childnode refid="320" relation="include">
+        </childnode>
+        <childnode refid="314" relation="include">
+        </childnode>
+        <childnode refid="317" relation="include">
+        </childnode>
+      </node>
+      <node id="318">
+        <label>matrix3x3.hh</label>
+        <link refid="matrix3x3_8hh"/>
+        <childnode refid="314" relation="include">
+        </childnode>
+        <childnode refid="319" relation="include">
+        </childnode>
+        <childnode refid="320" relation="include">
+        </childnode>
+      </node>
+      <node id="314">
+        <label>iostream</label>
+      </node>
+      <node id="325">
+        <label>HexPrism.hh</label>
+        <link refid="_hex_prism_8hh"/>
+        <childnode refid="321" relation="include">
+        </childnode>
+        <childnode refid="318" relation="include">
+        </childnode>
+        <childnode refid="323" relation="include">
+        </childnode>
+      </node>
+      <node id="328">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_quadracopter_8cpp_1af216f9e5677de029a33dc3f4e580a542" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ofstream &amp;</type>
+        <definition>std::ofstream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ofstream &amp;stream, Quadracopter &amp;quad)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ofstream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type><ref refid="class_quadracopter" kindref="compound">Quadracopter</ref> &amp;</type>
+          <declname>quad</declname>
+        </param>
+        <briefdescription>
+<para>Przeciazenie operatora zapisujacego wierzcholki drona do pliku. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- strumien plikowy do zapisu wierzcholkow </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>quad</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- drona do zapisu </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::ofstream&amp; - strumien z zapisanymi danymi </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kuba/obiekt/DronLvHard/prj/src/Quadracopter.cpp" line="36" column="1" bodyfile="/home/kuba/obiekt/DronLvHard/prj/src/Quadracopter.cpp" bodystart="36" bodyend="44"/>
+        <references refid="class_quadracopter_1a1e565e85a55c6c2c1ea7db8869dd6dcc" compoundref="_quadracopter_8hh" startline="102" endline="102">Quadracopter::GetHull</references>
+        <references refid="_quadracopter_8hh_1ae118ca9ee93d6a5f2588b28d39dee76b" compoundref="_quadracopter_8hh" startline="17">kNumberOfDisc</references>
+        <referencedby refid="class_quadracopter_1a8b7c6b9d441156f3991b11b73543adc3" compoundref="_quadracopter_8hh" startline="190" endline="190">Quadracopter::GetTrack</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_quadracopter_8hh" kindref="compound">Quadracopter.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="class_quadracopter_1ac9bed2c9c204a7f260fec4f1f71e3402" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_quadracopter_1ac9bed2c9c204a7f260fec4f1f71e3402" kindref="member">Quadracopter::ChangeOrientation</ref>(<ref refid="class_matrix" kindref="compound">Matrix3x3</ref><sp/>matrix,<ref refid="class_vector" kindref="compound">Vector3D</ref><sp/>symetry){</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>przesuniecie<sp/>ukladu<sp/>wspolrzednych<sp/>do<sp/>ukladu<sp/>wobec<sp/>prostopadloscianu*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;<ref refid="cuboid_8hh_1a307d3738f6f190cdcd0c4f90bd458fe9" kindref="member">kCubNodeNumber</ref>+2;i++)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_quadracopter_1a1bc37defc8b79a02c1abba10e69742a7" kindref="member">hull</ref>[i]-=symetry;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_quadracopter_1a1bc37defc8b79a02c1abba10e69742a7" kindref="member">hull</ref>.<ref refid="classfigures3_d_1a630645770668a4a1b35762a311db39b8" kindref="member">rotate</ref>(matrix);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;kCubNodeNumber+2;i++)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_quadracopter_1a1bc37defc8b79a02c1abba10e69742a7" kindref="member">hull</ref>[i]+=symetry;<sp/><sp/></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;4;i++){<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=0;j&lt;14;j++){</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_quadracopter_1a51b2350b8ec3efc0906228595ffcecd1" kindref="member">disc</ref>[i][j]-=<ref refid="class_object_of_scene_1a3940aba3014aefed326cdc4301333af1" kindref="member">symetry</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;4;i++)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_quadracopter_1a51b2350b8ec3efc0906228595ffcecd1" kindref="member">disc</ref>[i].rotate(matrix);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;4;i++){</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=0;j&lt;14;j++){</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_quadracopter_1a51b2350b8ec3efc0906228595ffcecd1" kindref="member">disc</ref>[i][j]+=<ref refid="class_object_of_scene_1a3940aba3014aefed326cdc4301333af1" kindref="member">symetry</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="_quadracopter_8cpp_1af216f9e5677de029a33dc3f4e580a542" refkind="member"><highlight class="normal">std::ofstream&amp;<sp/><ref refid="_quadracopter_8cpp_1af216f9e5677de029a33dc3f4e580a542" kindref="member">operator &lt;&lt; </ref>(std::ofstream<sp/>&amp;<sp/>stream,<sp/><ref refid="class_quadracopter" kindref="compound">Quadracopter</ref><sp/>&amp;<sp/>quad){</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>stream<sp/>&lt;&lt;<sp/>quad.<ref refid="class_quadracopter_1a1e565e85a55c6c2c1ea7db8869dd6dcc" kindref="member">GetHull</ref>()<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;<ref refid="_quadracopter_8hh_1ae118ca9ee93d6a5f2588b28d39dee76b" kindref="member">kNumberOfDisc</ref>;i++)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stream<sp/>&lt;&lt;<sp/>quad[i]<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>stream;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="class_quadracopter_1a9acb965be075b277df0901e99cccfacf" refkind="member"><highlight class="normal"><ref refid="class_quadracopter_1a9acb965be075b277df0901e99cccfacf" kindref="member">Quadracopter::Quadracopter</ref>(){</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="class_hex_prism" kindref="compound">HexPrism</ref><sp/>disc1,<sp/>disc2(-20,0),disc3(-20,-24),disc4(0,-24);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="class_quadracopter_1a2d2329d63abb5ff624dc1d95660a08b4" kindref="member">RotationAngle</ref>=90;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="class_object_of_scene_1a3940aba3014aefed326cdc4301333af1" kindref="member">symetry</ref>={0,0,0};</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="class_quadracopter_1a34736716e6c9c1ef8a73dec7e4dc2485" kindref="member">radius</ref>=0;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="class_quadracopter_1aebaeeec3692eeff5e6d51549e9eb0619" kindref="member">height</ref>=0;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_quadracopter_1a51b2350b8ec3efc0906228595ffcecd1" kindref="member">disc</ref>[0]=disc1;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_quadracopter_1a51b2350b8ec3efc0906228595ffcecd1" kindref="member">disc</ref>[1]=disc2;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_quadracopter_1a51b2350b8ec3efc0906228595ffcecd1" kindref="member">disc</ref>[2]=disc3;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_quadracopter_1a51b2350b8ec3efc0906228595ffcecd1" kindref="member">disc</ref>[3]=disc4;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_object_of_scene_1a3940aba3014aefed326cdc4301333af1" kindref="member">symetry</ref>[0]=<ref refid="class_quadracopter_1a1bc37defc8b79a02c1abba10e69742a7" kindref="member">hull</ref>.<ref refid="class_cuboid_1a1bd1aaaa5b60441acf5d75c56a7f3b53" kindref="member">GetSymetryPoint</ref>()[0];</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_object_of_scene_1a3940aba3014aefed326cdc4301333af1" kindref="member">symetry</ref>[1]=<ref refid="class_quadracopter_1a1bc37defc8b79a02c1abba10e69742a7" kindref="member">hull</ref>.<ref refid="class_cuboid_1a1bd1aaaa5b60441acf5d75c56a7f3b53" kindref="member">GetSymetryPoint</ref>()[1];</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_object_of_scene_1a3940aba3014aefed326cdc4301333af1" kindref="member">symetry</ref>[2]=(<ref refid="class_quadracopter_1a1bc37defc8b79a02c1abba10e69742a7" kindref="member">hull</ref>[9][2]+<ref refid="class_quadracopter_1a51b2350b8ec3efc0906228595ffcecd1" kindref="member">disc</ref>[0][12][2])/2;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_quadracopter_1a34736716e6c9c1ef8a73dec7e4dc2485" kindref="member">radius</ref>=sqrt(pow(<ref refid="class_quadracopter_1a1bc37defc8b79a02c1abba10e69742a7" kindref="member">hull</ref>.<ref refid="class_cuboid_1a1bd1aaaa5b60441acf5d75c56a7f3b53" kindref="member">GetSymetryPoint</ref>()[0]-<ref refid="class_quadracopter_1a51b2350b8ec3efc0906228595ffcecd1" kindref="member">disc</ref>[0][5][0],2)+pow(<ref refid="class_quadracopter_1a1bc37defc8b79a02c1abba10e69742a7" kindref="member">hull</ref>.<ref refid="class_cuboid_1a1bd1aaaa5b60441acf5d75c56a7f3b53" kindref="member">GetSymetryPoint</ref>()[1]-<ref refid="class_quadracopter_1a51b2350b8ec3efc0906228595ffcecd1" kindref="member">disc</ref>[0][5][1],2))+0.5;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_quadracopter_1aebaeeec3692eeff5e6d51549e9eb0619" kindref="member">height</ref>=7.5;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_quadracopter_1a04bd01dc2756f344af906ffb4f8b6655" kindref="member">track</ref>.push_back(<ref refid="class_object_of_scene_1a3940aba3014aefed326cdc4301333af1" kindref="member">symetry</ref>);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_quadracopter_1a04bd01dc2756f344af906ffb4f8b6655" kindref="member">track</ref>.push_back(<ref refid="class_object_of_scene_1a3940aba3014aefed326cdc4301333af1" kindref="member">symetry</ref>);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="class_quadracopter_1a88854bf826c6ee95de12947ae45112cb" refkind="member"><highlight class="normal"><ref refid="class_vector" kindref="compound">Vector3D</ref><sp/><ref refid="class_quadracopter_1a88854bf826c6ee95de12947ae45112cb" kindref="member">Quadracopter::MoveUpDown</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>angle)</highlight><highlight class="keyword">const</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector" kindref="compound">Vector3D</ref><sp/>MoveVector;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>road=0;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sigma=0;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Na<sp/>jaka<sp/>odleglosc<sp/>chcesz<sp/>przemiescic<sp/>drona<sp/>?<sp/>:&quot;</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>cin<sp/>&gt;&gt;<sp/>road;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>endl<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Podaj<sp/>kat<sp/>wznoszenia/opadania:<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>cin<sp/>&gt;&gt;<sp/>sigma;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(cin.fail()){</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cerr<sp/>&lt;&lt;<sp/>endl<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Cos<sp/>poszlo<sp/>nie<sp/>tak.<sp/>Sprobuj<sp/>jeszcze<sp/>raz.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cin.clear();</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cin.ignore(10000,</highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Na<sp/>jaka<sp/>odleglosc<sp/>chcesz<sp/>przemiescic<sp/>drona<sp/>?<sp/>:&quot;</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cin<sp/>&gt;&gt;<sp/>road;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>endl<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Podaj<sp/>kat<sp/>wznoszenia/opadania:<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cin<sp/>&gt;&gt;<sp/>sigma;<sp/><sp/></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>sigma=M_PI*sigma/180;<sp/></highlight><highlight class="comment">//<sp/>zamiana<sp/>stopni<sp/>na<sp/>radiany</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>angle=M_PI*angle/180;<sp/></highlight><highlight class="comment">//<sp/>zamiana<sp/>stopni<sp/>na<sp/>radiany</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>MoveVector[0]=road*cos(sigma)*cos(angle);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>MoveVector[1]=road*cos(sigma)*sin(angle);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>MoveVector[2]=road*sin(sigma);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>MoveVector;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="class_quadracopter_1a53ea4afb198dee646fa391296b00da48" refkind="member"><highlight class="normal"><ref refid="class_quadracopter_1a9acb965be075b277df0901e99cccfacf" kindref="member">Quadracopter::Quadracopter</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>y,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>z){</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="class_hex_prism" kindref="compound">HexPrism</ref><sp/>disc1(x,y,z),<sp/>disc2(-20+x,0+y,z),disc3(-20+x,-24+y,z),disc4(0+x,-24+y,z);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>a[]{x,y,z,1,1,1};</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="class_cuboid" kindref="compound">Cuboid</ref><sp/>cub(a);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="class_quadracopter_1a2d2329d63abb5ff624dc1d95660a08b4" kindref="member">RotationAngle</ref>=90;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_quadracopter_1a1bc37defc8b79a02c1abba10e69742a7" kindref="member">hull</ref>=cub;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_quadracopter_1a51b2350b8ec3efc0906228595ffcecd1" kindref="member">disc</ref>[0]=disc1;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_quadracopter_1a51b2350b8ec3efc0906228595ffcecd1" kindref="member">disc</ref>[1]=disc2;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_quadracopter_1a51b2350b8ec3efc0906228595ffcecd1" kindref="member">disc</ref>[2]=disc3;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_quadracopter_1a51b2350b8ec3efc0906228595ffcecd1" kindref="member">disc</ref>[3]=disc4;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_object_of_scene_1a3940aba3014aefed326cdc4301333af1" kindref="member">symetry</ref>[0]=<ref refid="class_quadracopter_1a1bc37defc8b79a02c1abba10e69742a7" kindref="member">hull</ref>.<ref refid="class_cuboid_1a1bd1aaaa5b60441acf5d75c56a7f3b53" kindref="member">GetSymetryPoint</ref>()[0];</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_object_of_scene_1a3940aba3014aefed326cdc4301333af1" kindref="member">symetry</ref>[1]=<ref refid="class_quadracopter_1a1bc37defc8b79a02c1abba10e69742a7" kindref="member">hull</ref>.<ref refid="class_cuboid_1a1bd1aaaa5b60441acf5d75c56a7f3b53" kindref="member">GetSymetryPoint</ref>()[1];</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_object_of_scene_1a3940aba3014aefed326cdc4301333af1" kindref="member">symetry</ref>[2]=(<ref refid="class_quadracopter_1a1bc37defc8b79a02c1abba10e69742a7" kindref="member">hull</ref>[9][2]+<ref refid="class_quadracopter_1a51b2350b8ec3efc0906228595ffcecd1" kindref="member">disc</ref>[0][12][2])/2;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_quadracopter_1a34736716e6c9c1ef8a73dec7e4dc2485" kindref="member">radius</ref>=sqrt(pow(<ref refid="class_quadracopter_1a1bc37defc8b79a02c1abba10e69742a7" kindref="member">hull</ref>.<ref refid="class_cuboid_1a1bd1aaaa5b60441acf5d75c56a7f3b53" kindref="member">GetSymetryPoint</ref>()[0]-<ref refid="class_quadracopter_1a51b2350b8ec3efc0906228595ffcecd1" kindref="member">disc</ref>[0][5][0],2)+pow(<ref refid="class_quadracopter_1a1bc37defc8b79a02c1abba10e69742a7" kindref="member">hull</ref>.<ref refid="class_cuboid_1a1bd1aaaa5b60441acf5d75c56a7f3b53" kindref="member">GetSymetryPoint</ref>()[1]-<ref refid="class_quadracopter_1a51b2350b8ec3efc0906228595ffcecd1" kindref="member">disc</ref>[0][5][1],2))+0.3;<sp/></highlight><highlight class="comment">//disc[0][3][0]<sp/>i<sp/>disc[0][4][1]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_quadracopter_1aebaeeec3692eeff5e6d51549e9eb0619" kindref="member">height</ref>=7.5;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_quadracopter_1a04bd01dc2756f344af906ffb4f8b6655" kindref="member">track</ref>.push_back(<ref refid="class_object_of_scene_1a3940aba3014aefed326cdc4301333af1" kindref="member">symetry</ref>);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_quadracopter_1a04bd01dc2756f344af906ffb4f8b6655" kindref="member">track</ref>.push_back(<ref refid="class_object_of_scene_1a3940aba3014aefed326cdc4301333af1" kindref="member">symetry</ref>);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128" refid="class_quadracopter_1aa1c2a6f507a5bcd7bc37fa5d44a930e5" refkind="member"><highlight class="normal"><ref refid="class_vector" kindref="compound">Vector3D</ref><sp/><ref refid="class_quadracopter_1aa1c2a6f507a5bcd7bc37fa5d44a930e5" kindref="member">Quadracopter::MoveSymetry</ref>(){</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_object_of_scene_1a3940aba3014aefed326cdc4301333af1" kindref="member">symetry</ref>[0]=<ref refid="class_quadracopter_1a1bc37defc8b79a02c1abba10e69742a7" kindref="member">hull</ref>.<ref refid="class_cuboid_1a1bd1aaaa5b60441acf5d75c56a7f3b53" kindref="member">GetSymetryPoint</ref>()[0];</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_object_of_scene_1a3940aba3014aefed326cdc4301333af1" kindref="member">symetry</ref>[1]=<ref refid="class_quadracopter_1a1bc37defc8b79a02c1abba10e69742a7" kindref="member">hull</ref>.<ref refid="class_cuboid_1a1bd1aaaa5b60441acf5d75c56a7f3b53" kindref="member">GetSymetryPoint</ref>()[1];</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_object_of_scene_1a3940aba3014aefed326cdc4301333af1" kindref="member">symetry</ref>[2]=(<ref refid="class_quadracopter_1a1bc37defc8b79a02c1abba10e69742a7" kindref="member">hull</ref>[0][2]+<ref refid="class_quadracopter_1a51b2350b8ec3efc0906228595ffcecd1" kindref="member">disc</ref>[0][11][2])/2;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_quadracopter_1a04bd01dc2756f344af906ffb4f8b6655" kindref="member">track</ref>.pop_back();</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_quadracopter_1a04bd01dc2756f344af906ffb4f8b6655" kindref="member">track</ref>.push_back(<ref refid="class_object_of_scene_1a3940aba3014aefed326cdc4301333af1" kindref="member">symetry</ref>);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_object_of_scene_1a3940aba3014aefed326cdc4301333af1" kindref="member">symetry</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="138"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140" refid="class_quadracopter_1a27a2a987ddd033cdc774dbdd1a28d153" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_quadracopter_1a27a2a987ddd033cdc774dbdd1a28d153" kindref="member">Quadracopter::IfCollision</ref>(<ref refid="class_vector" kindref="compound">Vector3D</ref><sp/>PhysicalPoint,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_quadracopter_1a34736716e6c9c1ef8a73dec7e4dc2485" kindref="member">radius</ref>)</highlight><highlight class="keyword">const</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>difference=0;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>difference=sqrt(pow(PhysicalPoint[0]-<ref refid="class_object_of_scene_1a3940aba3014aefed326cdc4301333af1" kindref="member">symetry</ref>[0],2)+pow(PhysicalPoint[1]-<ref refid="class_object_of_scene_1a3940aba3014aefed326cdc4301333af1" kindref="member">symetry</ref>[1],2));</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(0==difference)</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(difference&lt;=<sp/>(2*radius)<sp/>){</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">((abs(PhysicalPoint[2]-<ref refid="class_object_of_scene_1a3940aba3014aefed326cdc4301333af1" kindref="member">symetry</ref>[2])-2.5)<sp/>&lt;=<sp/>(2*<ref refid="class_quadracopter_1aebaeeec3692eeff5e6d51549e9eb0619" kindref="member">height</ref>)<sp/>){</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159" refid="class_quadracopter_1a0653c1a4019907005c4d758168ad2ec1" refkind="member"><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_quadracopter_1a0653c1a4019907005c4d758168ad2ec1" kindref="member">Quadracopter::WriteToFile</ref>(ofstream<sp/>&amp;stream){</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>stream<sp/>&lt;&lt;<sp/>(*this);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/>}</highlight></codeline>
+    </programlisting>
+    <location file="/home/kuba/obiekt/DronLvHard/prj/src/Quadracopter.cpp"/>
+  </compounddef>
+</doxygen>

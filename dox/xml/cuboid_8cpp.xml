@@ -1,0 +1,257 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="cuboid_8cpp" kind="file" language="C++">
+    <compoundname>cuboid.cpp</compoundname>
+    <includes refid="cuboid_8hh" local="yes">cuboid.hh</includes>
+    <incdepgraph>
+      <node id="9">
+        <label>iomanip</label>
+      </node>
+      <node id="1">
+        <label>cuboid.hh</label>
+        <link refid="cuboid_8hh"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>figures3D.hh</label>
+        <link refid="figures3_d_8hh"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>vector.hh</label>
+        <link refid="vector_8hh"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>cmath</label>
+      </node>
+      <node id="7">
+        <label>vector3D.hh</label>
+        <link refid="vector3_d_8hh"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>fstream</label>
+      </node>
+      <node id="0">
+        <label>cuboid.cpp</label>
+        <link refid="cuboid.cpp"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>vector</label>
+      </node>
+      <node id="6">
+        <label>matrix.hh</label>
+        <link refid="matrix_8hh"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>matrix3x3.hh</label>
+        <link refid="matrix3x3_8hh"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="cuboid_8cpp_1ab0a87774a2e290f9bc0542a640ef0444" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;output_ostream, Cuboid &amp;cube)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>output_ostream</declname>
+        </param>
+        <param>
+          <type><ref refid="class_cuboid" kindref="compound">Cuboid</ref> &amp;</type>
+          <declname>cube</declname>
+        </param>
+        <briefdescription>
+<para>Wypisywanie wierzcholkow na zadany strumien. </para>        </briefdescription>
+        <detaileddescription>
+<para>Przeciazenie operatora wypisujacego wierzcholki prostokata na ostream </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kuba/obiekt/DronLvHard/prj/src/cuboid.cpp" line="82" column="1" bodyfile="/home/kuba/obiekt/DronLvHard/prj/src/cuboid.cpp" bodystart="82" bodyend="93"/>
+        <references refid="cuboid_8hh_1a307d3738f6f190cdcd0c4f90bd458fe9" compoundref="cuboid_8hh" startline="8">kCubNodeNumber</references>
+      </memberdef>
+      <memberdef kind="function" id="cuboid_8cpp_1a780d18b19a80ea928003c7e7b6f0e9b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ofstream &amp;</type>
+        <definition>std::ofstream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ofstream &amp;output_ofstream, Cuboid &amp;cube)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ofstream &amp;</type>
+          <declname>output_ofstream</declname>
+        </param>
+        <param>
+          <type><ref refid="class_cuboid" kindref="compound">Cuboid</ref> &amp;</type>
+          <declname>cube</declname>
+        </param>
+        <briefdescription>
+<para>Przeciazenie operatora zapisujacego wierzcholki do pliku. </para>        </briefdescription>
+        <detaileddescription>
+<para>Przeciazenie operatora zapisujacego wierzcholki do pliku </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kuba/obiekt/DronLvHard/prj/src/cuboid.cpp" line="96" column="1" bodyfile="/home/kuba/obiekt/DronLvHard/prj/src/cuboid.cpp" bodystart="96" bodyend="104"/>
+        <references refid="cuboid_8hh_1a307d3738f6f190cdcd0c4f90bd458fe9" compoundref="cuboid_8hh" startline="8">kCubNodeNumber</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="cuboid_8hh" kindref="compound">cuboid.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="class_cuboid_1a1abf60e93d024b7a01ee5b1a48f1f08a" refkind="member"><highlight class="normal"><ref refid="class_cuboid_1a1abf60e93d024b7a01ee5b1a48f1f08a" kindref="member">Cuboid::Cuboid</ref>(){</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//stworzenie<sp/>na<sp/>stale<sp/>prostopadloscianu</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector" kindref="compound">Vector3D</ref><sp/>vec[<ref refid="cuboid_8hh_1a307d3738f6f190cdcd0c4f90bd458fe9" kindref="member">kCubNodeNumber</ref>]={{-10,-12,-5},{10,-12,-5},{10,12,-5},{-10,12,-5},{-10,-12,5},{10,-12,5},{10,12,5},{-10,12,5}};</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector" kindref="compound">Vector3D</ref><sp/>MiddleUp(0,0,5),MiddleDown(0,0,-5);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;<ref refid="cuboid_8hh_1a307d3738f6f190cdcd0c4f90bd458fe9" kindref="member">kCubNodeNumber</ref>;i++)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classfigures3_d_1a491e0281ce1e02aa7159840923cb3ef6" kindref="member">P</ref>.push_back(vec[i]);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classfigures3_d_1a491e0281ce1e02aa7159840923cb3ef6" kindref="member">P</ref>.push_back(MiddleUp);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classfigures3_d_1a491e0281ce1e02aa7159840923cb3ef6" kindref="member">P</ref>.push_back(MiddleDown);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="class_cuboid_1aeecc4924bc1456780b20c3048e3515f9" refkind="member"><highlight class="normal"><ref refid="class_cuboid_1a1abf60e93d024b7a01ee5b1a48f1f08a" kindref="member">Cuboid::Cuboid</ref>(<ref refid="class_vector" kindref="compound">Vector3D</ref><sp/>centre,<ref refid="class_vector" kindref="compound">Vector3D</ref><sp/>size){</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector" kindref="compound">Vector3D</ref><sp/>vec[<ref refid="cuboid_8hh_1a307d3738f6f190cdcd0c4f90bd458fe9" kindref="member">kCubNodeNumber</ref>];</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector" kindref="compound">Vector3D</ref><sp/>MiddleUp,MiddleDown;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;3;i++)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>size[i]/=2;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;<ref refid="cuboid_8hh_1a307d3738f6f190cdcd0c4f90bd458fe9" kindref="member">kCubNodeNumber</ref>;i++){</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vec[i]=centre;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MiddleDown=centre;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MiddleUp=centre;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vec[0][0]-=size[0];<sp/>vec[0][1]+=size[1];<sp/>vec[0][2]-=size[2];</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vec[1][0]+=size[0];<sp/>vec[1][1]+=size[1];<sp/>vec[1][2]-=size[2];</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vec[2][0]+=size[0];<sp/>vec[2][1]-=size[1];<sp/>vec[2][2]-=size[2];</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vec[3][0]-=size[0];<sp/>vec[3][1]-=size[1];<sp/>vec[3][2]-=size[2];</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MiddleDown[2]-=size[2];</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vec[4][0]-=size[0];<sp/>vec[4][1]+=size[1];<sp/>vec[4][2]+=size[2];</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vec[5][0]+=size[0];<sp/>vec[5][1]+=size[1];<sp/>vec[5][2]+=size[2];</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vec[6][0]+=size[0];<sp/>vec[6][1]-=size[1];<sp/>vec[6][2]+=size[2];</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vec[7][0]-=size[0];<sp/>vec[7][1]-=size[1];<sp/>vec[7][2]+=size[2];</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MiddleUp[2]+=size[2];</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;<ref refid="cuboid_8hh_1a307d3738f6f190cdcd0c4f90bd458fe9" kindref="member">kCubNodeNumber</ref>;i++)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classfigures3_d_1a491e0281ce1e02aa7159840923cb3ef6" kindref="member">P</ref>.push_back(vec[i]);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classfigures3_d_1a491e0281ce1e02aa7159840923cb3ef6" kindref="member">P</ref>.push_back(MiddleUp);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classfigures3_d_1a491e0281ce1e02aa7159840923cb3ef6" kindref="member">P</ref>.push_back(MiddleDown);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="class_cuboid_1abd381a00b4e6fd8375b6c801a9380e18" refkind="member"><highlight class="normal"><ref refid="class_cuboid_1a1abf60e93d024b7a01ee5b1a48f1f08a" kindref="member">Cuboid::Cuboid</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*change){</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector" kindref="compound">Vector3D</ref><sp/>vec[<ref refid="cuboid_8hh_1a307d3738f6f190cdcd0c4f90bd458fe9" kindref="member">kCubNodeNumber</ref>]={{-10,-12,-5},{10,-12,-5},</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>{10,12,-5},{-10,12,-5},{-10,-12,5},</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>{10,-12,5},{10,12,5},{-10,12,5}};</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector" kindref="compound">Vector3D</ref><sp/>MiddleUp(0,0,5),MiddleDown(0,0,-5);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;<ref refid="cuboid_8hh_1a307d3738f6f190cdcd0c4f90bd458fe9" kindref="member">kCubNodeNumber</ref>;i++){</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=0;j&lt;3;j++){</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vec[i][j]+=change[j];</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vec[i][j]*=change[j+3];</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;3;i++){</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>MiddleDown[i]+=change[i];</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>MiddleUp[i]+=change[i];</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>MiddleDown[i]*=change[i+3];</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>MiddleUp[i]*=change[i+3];</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;<ref refid="cuboid_8hh_1a307d3738f6f190cdcd0c4f90bd458fe9" kindref="member">kCubNodeNumber</ref>;i++)</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classfigures3_d_1a491e0281ce1e02aa7159840923cb3ef6" kindref="member">P</ref>.push_back(vec[i]);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classfigures3_d_1a491e0281ce1e02aa7159840923cb3ef6" kindref="member">P</ref>.push_back(MiddleUp);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classfigures3_d_1a491e0281ce1e02aa7159840923cb3ef6" kindref="member">P</ref>.push_back(MiddleDown);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="cuboid_8cpp_1ab0a87774a2e290f9bc0542a640ef0444" refkind="member"><highlight class="normal">std::ostream&amp;<sp/><ref refid="cuboid_8cpp_1ab0a87774a2e290f9bc0542a640ef0444" kindref="member">operator &lt;&lt; </ref>(std::ostream<sp/>&amp;<sp/>output_ostream,<sp/><ref refid="class_cuboid" kindref="compound">Cuboid</ref><sp/>&amp;<sp/>cube){</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>output_ostream<sp/>&lt;&lt;<sp/>endl<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Wierzcholki<sp/>prostopadloscianu:&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;<ref refid="cuboid_8hh_1a307d3738f6f190cdcd0c4f90bd458fe9" kindref="member">kCubNodeNumber</ref>;i++){</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>output_ostream<sp/>&lt;&lt;<sp/>cube[i];</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>output_ostream<sp/>&lt;&lt;<sp/>endl<sp/>;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>output_ostream;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="cuboid_8cpp_1a780d18b19a80ea928003c7e7b6f0e9b8" refkind="member"><highlight class="normal">std::ofstream&amp;<sp/><ref refid="cuboid_8cpp_1ab0a87774a2e290f9bc0542a640ef0444" kindref="member">operator &lt;&lt; </ref>(std::ofstream<sp/>&amp;<sp/>output_ofstream,<sp/><ref refid="class_cuboid" kindref="compound">Cuboid</ref><sp/>&amp;<sp/>cube){</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;<ref refid="cuboid_8hh_1a307d3738f6f190cdcd0c4f90bd458fe9" kindref="member">kCubNodeNumber</ref>/2;i++)</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>output_ofstream<sp/>&lt;&lt;<sp/>cube[8]<sp/>&lt;&lt;<sp/>cube[i+4]<sp/>&lt;&lt;<sp/>cube[i]&lt;&lt;<sp/>cube[9]<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>output_ofstream<sp/>&lt;&lt;<sp/>cube[8]<sp/>&lt;&lt;<sp/>cube[4]<sp/>&lt;&lt;<sp/>cube[0]&lt;&lt;<sp/>cube[9]<sp/>&lt;&lt;<sp/>endl<sp/>;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>output_ofstream;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="class_cuboid_1a1bd1aaaa5b60441acf5d75c56a7f3b53" refkind="member"><highlight class="normal"><ref refid="class_vector" kindref="compound">Vector3D</ref><sp/><ref refid="class_cuboid_1a1bd1aaaa5b60441acf5d75c56a7f3b53" kindref="member">Cuboid::GetSymetryPoint</ref>()</highlight><highlight class="keyword">const</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector" kindref="compound">Vector3D</ref><sp/>SymetryPoint;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>SymetryPoint[0]=(<ref refid="classfigures3_d_1a491e0281ce1e02aa7159840923cb3ef6" kindref="member">P</ref>[0][0]+<ref refid="classfigures3_d_1a491e0281ce1e02aa7159840923cb3ef6" kindref="member">P</ref>[1][0])/2;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>SymetryPoint[1]=(<ref refid="classfigures3_d_1a491e0281ce1e02aa7159840923cb3ef6" kindref="member">P</ref>[0][1]+<ref refid="classfigures3_d_1a491e0281ce1e02aa7159840923cb3ef6" kindref="member">P</ref>[2][1])/2;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>SymetryPoint[2]=(<ref refid="classfigures3_d_1a491e0281ce1e02aa7159840923cb3ef6" kindref="member">P</ref>[0][2]+<ref refid="classfigures3_d_1a491e0281ce1e02aa7159840923cb3ef6" kindref="member">P</ref>[4][2])/2;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>SymetryPoint;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/kuba/obiekt/DronLvHard/prj/src/cuboid.cpp"/>
+  </compounddef>
+</doxygen>

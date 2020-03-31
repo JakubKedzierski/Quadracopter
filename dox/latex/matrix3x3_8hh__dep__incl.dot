@@ -1,0 +1,36 @@
+digraph "matrix3x3.hh"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="matrix3x3.hh",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="cuboid.hh",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cuboid_8hh.html",tooltip="definicja klasy prostopadloscian, jako kadluba dronu "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Quadracopter.hh",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_quadracopter_8hh.html"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="main.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html"];
+  Node3 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Quadracopter.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_quadracopter_8cpp.html"];
+  Node2 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="cuboid.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cuboid_8cpp.html"];
+  Node2 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="HexPrism.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_hex_prism_8cpp.html"];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="figures3D.hh",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$figures3_d_8hh.html"];
+  Node8 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="HexPrism.hh",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_hex_prism_8hh.html",tooltip="Definicja graniastoslupa szescikatnego. "];
+  Node9 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="figures3D.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$figures3_d_8cpp.html"];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+}

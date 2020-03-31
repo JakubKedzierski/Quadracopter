@@ -1,0 +1,260 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_plant_of_obstacles_8hh" kind="file" language="C++">
+    <compoundname>PlantOfObstacles.hh</compoundname>
+    <includes refid="scene_8hh" local="yes">scene.hh</includes>
+    <includes local="no">cstdlib</includes>
+    <includes local="no">ctime</includes>
+    <includedby refid="main_8cpp" local="yes">main.cpp</includedby>
+    <includedby refid="_plant_of_obstacles_8cpp" local="yes">PlantOfObstacles.cpp</includedby>
+    <incdepgraph>
+      <node id="304">
+        <label>list</label>
+      </node>
+      <node id="299">
+        <label>iomanip</label>
+      </node>
+      <node id="293">
+        <label>cuboid.hh</label>
+        <link refid="cuboid_8hh"/>
+        <childnode refid="291" relation="include">
+        </childnode>
+        <childnode refid="292" relation="include">
+        </childnode>
+        <childnode refid="294" relation="include">
+        </childnode>
+        <childnode refid="295" relation="include">
+        </childnode>
+        <childnode refid="300" relation="include">
+        </childnode>
+      </node>
+      <node id="300">
+        <label>figures3D.hh</label>
+        <link refid="figures3_d_8hh"/>
+        <childnode refid="301" relation="include">
+        </childnode>
+        <childnode refid="297" relation="include">
+        </childnode>
+        <childnode refid="295" relation="include">
+        </childnode>
+      </node>
+      <node id="288">
+        <label>PlantOfObstacles.hh</label>
+        <link refid="PlantOfObstacles.hh"/>
+        <childnode refid="289" relation="include">
+        </childnode>
+        <childnode refid="307" relation="include">
+        </childnode>
+        <childnode refid="308" relation="include">
+        </childnode>
+      </node>
+      <node id="298">
+        <label>vector.hh</label>
+        <link refid="vector_8hh"/>
+        <childnode refid="291" relation="include">
+        </childnode>
+        <childnode refid="299" relation="include">
+        </childnode>
+      </node>
+      <node id="294">
+        <label>cmath</label>
+      </node>
+      <node id="297">
+        <label>vector3D.hh</label>
+        <link refid="vector3_d_8hh"/>
+        <childnode refid="291" relation="include">
+        </childnode>
+        <childnode refid="292" relation="include">
+        </childnode>
+        <childnode refid="298" relation="include">
+        </childnode>
+      </node>
+      <node id="290">
+        <label>Quadracopter.hh</label>
+        <link refid="_quadracopter_8hh"/>
+        <childnode refid="291" relation="include">
+        </childnode>
+        <childnode refid="292" relation="include">
+        </childnode>
+        <childnode refid="293" relation="include">
+        </childnode>
+        <childnode refid="302" relation="include">
+        </childnode>
+        <childnode refid="301" relation="include">
+        </childnode>
+        <childnode refid="299" relation="include">
+        </childnode>
+        <childnode refid="294" relation="include">
+        </childnode>
+        <childnode refid="303" relation="include">
+        </childnode>
+        <childnode refid="304" relation="include">
+        </childnode>
+        <childnode refid="305" relation="include">
+        </childnode>
+      </node>
+      <node id="292">
+        <label>fstream</label>
+      </node>
+      <node id="306">
+        <label>Obstacles.hh</label>
+        <link refid="_obstacles_8hh"/>
+        <childnode refid="303" relation="include">
+        </childnode>
+        <childnode refid="293" relation="include">
+        </childnode>
+      </node>
+      <node id="303">
+        <label>ObjectOfScene.hh</label>
+        <link refid="_object_of_scene_8hh"/>
+        <childnode refid="297" relation="include">
+        </childnode>
+      </node>
+      <node id="308">
+        <label>ctime</label>
+      </node>
+      <node id="289">
+        <label>scene.hh</label>
+        <link refid="scene_8hh"/>
+        <childnode refid="290" relation="include">
+        </childnode>
+        <childnode refid="306" relation="include">
+        </childnode>
+      </node>
+      <node id="301">
+        <label>vector</label>
+      </node>
+      <node id="296">
+        <label>matrix.hh</label>
+        <link refid="matrix_8hh"/>
+        <childnode refid="297" relation="include">
+        </childnode>
+        <childnode refid="291" relation="include">
+        </childnode>
+        <childnode refid="294" relation="include">
+        </childnode>
+      </node>
+      <node id="295">
+        <label>matrix3x3.hh</label>
+        <link refid="matrix3x3_8hh"/>
+        <childnode refid="291" relation="include">
+        </childnode>
+        <childnode refid="296" relation="include">
+        </childnode>
+        <childnode refid="297" relation="include">
+        </childnode>
+      </node>
+      <node id="307">
+        <label>cstdlib</label>
+      </node>
+      <node id="291">
+        <label>iostream</label>
+      </node>
+      <node id="302">
+        <label>HexPrism.hh</label>
+        <link refid="_hex_prism_8hh"/>
+        <childnode refid="298" relation="include">
+        </childnode>
+        <childnode refid="295" relation="include">
+        </childnode>
+        <childnode refid="300" relation="include">
+        </childnode>
+      </node>
+      <node id="305">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="309">
+        <label>PlantOfObstacles.hh</label>
+        <link refid="PlantOfObstacles.hh"/>
+        <childnode refid="310" relation="include">
+        </childnode>
+        <childnode refid="311" relation="include">
+        </childnode>
+      </node>
+      <node id="310">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="311">
+        <label>PlantOfObstacles.cpp</label>
+        <link refid="_plant_of_obstacles_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_plant_of_obstacles" prot="public">PlantOfObstacles</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_plant_of_obstacles_8hh_1a094c367727273b4da2b960ca3b3edc06" prot="public" static="no">
+        <name>ID</name>
+        <enumvalue id="_plant_of_obstacles_8hh_1a094c367727273b4da2b960ca3b3edc06a62256e12fe206e6212239877e25c1c66" prot="public">
+          <name>Drone</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_plant_of_obstacles_8hh_1a094c367727273b4da2b960ca3b3edc06a297b29d409921385e20239f12db235ed" prot="public">
+          <name>Obstacle</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>numer identyfikacyjny obiektu </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kuba/obiekt/DronLvHard/prj/inc/PlantOfObstacles.hh" line="9" column="1" bodyfile="/home/kuba/obiekt/DronLvHard/prj/inc/PlantOfObstacles.hh" bodystart="9" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="enum" id="_plant_of_obstacles_8hh_1a4c502dc6ce14797e2bb86775ccf09cbf" prot="public" static="no">
+        <name>Users</name>
+        <enumvalue id="_plant_of_obstacles_8hh_1a4c502dc6ce14797e2bb86775ccf09cbfae168fb880dc0042ac28438e1875e41d3" prot="public">
+          <name>User</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_plant_of_obstacles_8hh_1a4c502dc6ce14797e2bb86775ccf09cbfac886d5190f68bd172807c62df7a1b536" prot="public">
+          <name>Root</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Wybor uzytkownik/programista. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kuba/obiekt/DronLvHard/prj/inc/PlantOfObstacles.hh" line="15" column="1" bodyfile="/home/kuba/obiekt/DronLvHard/prj/inc/PlantOfObstacles.hh" bodystart="15" bodyend="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="scene_8hh" kindref="compound">scene.hh</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdlib&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ctime&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="_plant_of_obstacles_8hh_1a094c367727273b4da2b960ca3b3edc06a297b29d409921385e20239f12db235ed" refkind="member"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_plant_of_obstacles_8hh_1a094c367727273b4da2b960ca3b3edc06" kindref="member">ID</ref><sp/>{<ref refid="_plant_of_obstacles_8hh_1a094c367727273b4da2b960ca3b3edc06a62256e12fe206e6212239877e25c1c66" kindref="member">Drone</ref>,<ref refid="_plant_of_obstacles_8hh_1a094c367727273b4da2b960ca3b3edc06a297b29d409921385e20239f12db235ed" kindref="member">Obstacle</ref>};</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="_plant_of_obstacles_8hh_1a4c502dc6ce14797e2bb86775ccf09cbf" refkind="member"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_plant_of_obstacles_8hh_1a4c502dc6ce14797e2bb86775ccf09cbf" kindref="member">Users</ref>{<ref refid="_plant_of_obstacles_8hh_1a4c502dc6ce14797e2bb86775ccf09cbfae168fb880dc0042ac28438e1875e41d3" kindref="member">User</ref>,<ref refid="_plant_of_obstacles_8hh_1a4c502dc6ce14797e2bb86775ccf09cbfac886d5190f68bd172807c62df7a1b536" kindref="member">Root</ref>};</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="class_plant_of_obstacles" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_plant_of_obstacles" kindref="compound">PlantOfObstacles</ref>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>shared_ptr&lt;ObjectOfScene&gt;<sp/><ref refid="class_plant_of_obstacles_1aed9fac6bbe259c61e016d1d8ad812b87" kindref="member">AddObject</ref>(<ref refid="_plant_of_obstacles_8hh_1a094c367727273b4da2b960ca3b3edc06" kindref="member">ID</ref><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<ref refid="_plant_of_obstacles_8hh_1a4c502dc6ce14797e2bb86775ccf09cbf" kindref="member">Users</ref><sp/>users)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/kuba/obiekt/DronLvHard/prj/inc/PlantOfObstacles.hh"/>
+  </compounddef>
+</doxygen>

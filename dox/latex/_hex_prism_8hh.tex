@@ -1,0 +1,95 @@
+\hypertarget{_hex_prism_8hh}{}\section{Hex\+Prism.\+hh File Reference}
+\label{_hex_prism_8hh}\index{Hex\+Prism.\+hh@{Hex\+Prism.\+hh}}
+
+
+Definicja graniastoslupa szescikatnego.  
+
+
+{\ttfamily \#include \char`\"{}vector.\+hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}matrix3x3.\+hh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}figures3\+D.\+hh\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_hex_prism}{Hex\+Prism}
+\begin{DoxyCompactList}\small\item\em Klasa modelujaca pojecie graniastoslupow prawidlowych szesciokatnych. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{_hex_prism_8hh_ad57b3fa8e45359906ac229567c209a63}{Speed} \{ \hyperlink{_hex_prism_8hh_ad57b3fa8e45359906ac229567c209a63a727b8a8d744d88f4d9596d91abfdf277}{Null}, 
+\hyperlink{_hex_prism_8hh_ad57b3fa8e45359906ac229567c209a63a15e47d3c9733bd519c1bd00349ce10e3}{Slow}, 
+\hyperlink{_hex_prism_8hh_ad57b3fa8e45359906ac229567c209a63a8cfb9311a439a51b14159ed0970f398b}{Medium}, 
+\hyperlink{_hex_prism_8hh_ad57b3fa8e45359906ac229567c209a63a44e0add47cd0ec96505d444d425b70af}{Fast}
+ \}\begin{DoxyCompactList}\small\item\em Wybor odpowiedniej szybkosci rotowania smigiel. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_hex_prism_8hh_ad57b3fa8e45359906ac229567c209a63}{Speed} \hyperlink{_hex_prism_8hh_a112b2d4ee58aaf5e7f794ab4a8223e4c}{Load\+Mode} (bool Rotor\+Or\+Hull)
+\begin{DoxyCompactList}\small\item\em \char`\"{}zaladowanie\char`\"{} szybkosci obrotu smigla \end{DoxyCompactList}\item 
+std\+::ofstream \& \hyperlink{_hex_prism_8hh_a34d36f827e3974e3b50ad08b1d5dfbdf}{operator$<$$<$} (std\+::ofstream \&stream, \hyperlink{class_hex_prism}{Hex\+Prism} \&hex)
+\begin{DoxyCompactList}\small\item\em Zapis wspolrzednych graniastoslupa szesciokatnego do pliku. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const int \hyperlink{_hex_prism_8hh_a80499785678dad84e4b1f1828d7f0835}{k\+Hex\+Nodes} =12
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Plik zawiera klase graniastoslupa szesciokatnego oraz modyfikacje szybkosci obrotu 
+
+\subsection{Enumeration Type Documentation}
+\index{Hex\+Prism.\+hh@{Hex\+Prism.\+hh}!Speed@{Speed}}
+\index{Speed@{Speed}!Hex\+Prism.\+hh@{Hex\+Prism.\+hh}}
+\subsubsection[{\texorpdfstring{Speed}{Speed}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Speed}}\hypertarget{_hex_prism_8hh_ad57b3fa8e45359906ac229567c209a63}{}\label{_hex_prism_8hh_ad57b3fa8e45359906ac229567c209a63}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Null@{Null}!Hex\+Prism.\+hh@{Hex\+Prism.\+hh}}\index{Hex\+Prism.\+hh@{Hex\+Prism.\+hh}!Null@{Null}}\item[{\em 
+Null\hypertarget{_hex_prism_8hh_ad57b3fa8e45359906ac229567c209a63a727b8a8d744d88f4d9596d91abfdf277}{}\label{_hex_prism_8hh_ad57b3fa8e45359906ac229567c209a63a727b8a8d744d88f4d9596d91abfdf277}
+}]\index{Slow@{Slow}!Hex\+Prism.\+hh@{Hex\+Prism.\+hh}}\index{Hex\+Prism.\+hh@{Hex\+Prism.\+hh}!Slow@{Slow}}\item[{\em 
+Slow\hypertarget{_hex_prism_8hh_ad57b3fa8e45359906ac229567c209a63a15e47d3c9733bd519c1bd00349ce10e3}{}\label{_hex_prism_8hh_ad57b3fa8e45359906ac229567c209a63a15e47d3c9733bd519c1bd00349ce10e3}
+}]\index{Medium@{Medium}!Hex\+Prism.\+hh@{Hex\+Prism.\+hh}}\index{Hex\+Prism.\+hh@{Hex\+Prism.\+hh}!Medium@{Medium}}\item[{\em 
+Medium\hypertarget{_hex_prism_8hh_ad57b3fa8e45359906ac229567c209a63a8cfb9311a439a51b14159ed0970f398b}{}\label{_hex_prism_8hh_ad57b3fa8e45359906ac229567c209a63a8cfb9311a439a51b14159ed0970f398b}
+}]\index{Fast@{Fast}!Hex\+Prism.\+hh@{Hex\+Prism.\+hh}}\index{Hex\+Prism.\+hh@{Hex\+Prism.\+hh}!Fast@{Fast}}\item[{\em 
+Fast\hypertarget{_hex_prism_8hh_ad57b3fa8e45359906ac229567c209a63a44e0add47cd0ec96505d444d425b70af}{}\label{_hex_prism_8hh_ad57b3fa8e45359906ac229567c209a63a44e0add47cd0ec96505d444d425b70af}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\index{Hex\+Prism.\+hh@{Hex\+Prism.\+hh}!Load\+Mode@{Load\+Mode}}
+\index{Load\+Mode@{Load\+Mode}!Hex\+Prism.\+hh@{Hex\+Prism.\+hh}}
+\subsubsection[{\texorpdfstring{Load\+Mode(bool Rotor\+Or\+Hull)}{LoadMode(bool RotorOrHull)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Speed} Load\+Mode (
+\begin{DoxyParamCaption}
+\item[{bool}]{Rotor\+Or\+Hull}
+\end{DoxyParamCaption}
+)}\hypertarget{_hex_prism_8hh_a112b2d4ee58aaf5e7f794ab4a8223e4c}{}\label{_hex_prism_8hh_a112b2d4ee58aaf5e7f794ab4a8223e4c}
+\begin{DoxyReturn}{Returns}
+Speed -\/ szybkosc obrotu smigla 
+\end{DoxyReturn}
+\index{Hex\+Prism.\+hh@{Hex\+Prism.\+hh}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Hex\+Prism.\+hh@{Hex\+Prism.\+hh}}
+\subsubsection[{\texorpdfstring{operator$<$$<$(std\+::ofstream \&stream, Hex\+Prism \&hex)}{operator<<(std::ofstream &stream, HexPrism &hex)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ofstream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\+::ofstream \&}]{stream, }
+\item[{{\bf Hex\+Prism} \&}]{hex}
+\end{DoxyParamCaption}
+)}\hypertarget{_hex_prism_8hh_a34d36f827e3974e3b50ad08b1d5dfbdf}{}\label{_hex_prism_8hh_a34d36f827e3974e3b50ad08b1d5dfbdf}
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & -\/ strumien do ktorego zapisujemy \\
+\hline
+{\em hex} & -\/ graniastoslup ktory zapisujemy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::ofstream\& -\/ strumien z zapisanymi danymi 
+\end{DoxyReturn}
+
+
+\subsection{Variable Documentation}
+\index{Hex\+Prism.\+hh@{Hex\+Prism.\+hh}!k\+Hex\+Nodes@{k\+Hex\+Nodes}}
+\index{k\+Hex\+Nodes@{k\+Hex\+Nodes}!Hex\+Prism.\+hh@{Hex\+Prism.\+hh}}
+\subsubsection[{\texorpdfstring{k\+Hex\+Nodes}{kHexNodes}}]{\setlength{\rightskip}{0pt plus 5cm}const int k\+Hex\+Nodes =12}\hypertarget{_hex_prism_8hh_a80499785678dad84e4b1f1828d7f0835}{}\label{_hex_prism_8hh_a80499785678dad84e4b1f1828d7f0835}

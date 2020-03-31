@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_cuboid" kind="class" language="C++" prot="public">
+    <compoundname>Cuboid</compoundname>
+    <basecompoundref refid="classfigures3_d" prot="public" virt="non-virtual">figures3D</basecompoundref>
+    <includes refid="cuboid_8hh" local="no">cuboid.hh</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_cuboid_1a1abf60e93d024b7a01ee5b1a48f1f08a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Cuboid::Cuboid</definition>
+        <argsstring>()</argsstring>
+        <name>Cuboid</name>
+        <briefdescription>
+<para>Tworzymy nowy obiekt prostopadloscianu. </para>        </briefdescription>
+        <detaileddescription>
+<para>Automatycznie przypisujemy wierzcholki Dzieki temu uzytkownik nie musi podawac wierzcholkow, tylko operuje na gotowym obiekcie </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kuba/obiekt/DronLvHard/prj/inc/cuboid.hh" line="32" column="1" bodyfile="/home/kuba/obiekt/DronLvHard/prj/src/cuboid.cpp" bodystart="3" bodyend="15"/>
+        <references refid="cuboid_8hh_1a307d3738f6f190cdcd0c4f90bd458fe9" compoundref="cuboid_8hh" startline="8">kCubNodeNumber</references>
+        <references refid="classfigures3_d_1a491e0281ce1e02aa7159840923cb3ef6" compoundref="figures3_d_8hh" startline="27">figures3D::P</references>
+      </memberdef>
+      <memberdef kind="function" id="class_cuboid_1abd381a00b4e6fd8375b6c801a9380e18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Cuboid::Cuboid</definition>
+        <argsstring>(double *change)</argsstring>
+        <name>Cuboid</name>
+        <param>
+          <type>double *</type>
+          <declname>change</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="class_cuboid" kindref="compound">Cuboid</ref> object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>change</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- zestaw parametrow okreslajacyh ustawienia i rozmiar prostopadloscianu kolejno: x,y,z,scalex,scaley,scalez </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kuba/obiekt/DronLvHard/prj/inc/cuboid.hh" line="40" column="1" bodyfile="/home/kuba/obiekt/DronLvHard/prj/src/cuboid.cpp" bodystart="52" bodyend="79"/>
+        <references refid="cuboid_8hh_1a307d3738f6f190cdcd0c4f90bd458fe9" compoundref="cuboid_8hh" startline="8">kCubNodeNumber</references>
+        <references refid="classfigures3_d_1a491e0281ce1e02aa7159840923cb3ef6" compoundref="figures3_d_8hh" startline="27">figures3D::P</references>
+      </memberdef>
+      <memberdef kind="function" id="class_cuboid_1aeecc4924bc1456780b20c3048e3515f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Cuboid::Cuboid</definition>
+        <argsstring>(Vector3D centre, Vector3D size)</argsstring>
+        <name>Cuboid</name>
+        <param>
+          <type><ref refid="vector3_d_8hh_1a8790ef07836c1639da216f46501979c0" kindref="member">Vector3D</ref></type>
+          <declname>centre</declname>
+        </param>
+        <param>
+          <type><ref refid="vector3_d_8hh_1a8790ef07836c1639da216f46501979c0" kindref="member">Vector3D</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="class_cuboid" kindref="compound">Cuboid</ref> object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>centre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- srodek symetri nowego prostopadloscianu </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- rozmiary prostopadloscianu </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kuba/obiekt/DronLvHard/prj/inc/cuboid.hh" line="48" column="1" bodyfile="/home/kuba/obiekt/DronLvHard/prj/src/cuboid.cpp" bodystart="18" bodyend="50"/>
+        <references refid="cuboid_8hh_1a307d3738f6f190cdcd0c4f90bd458fe9" compoundref="cuboid_8hh" startline="8">kCubNodeNumber</references>
+        <references refid="classfigures3_d_1a491e0281ce1e02aa7159840923cb3ef6" compoundref="figures3_d_8hh" startline="27">figures3D::P</references>
+      </memberdef>
+      <memberdef kind="function" id="class_cuboid_1a1bd1aaaa5b60441acf5d75c56a7f3b53" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="vector3_d_8hh_1a8790ef07836c1639da216f46501979c0" kindref="member">Vector3D</ref></type>
+        <definition>Vector3D Cuboid::GetSymetryPoint</definition>
+        <argsstring>() const </argsstring>
+        <name>GetSymetryPoint</name>
+        <briefdescription>
+<para>Pozyskanie punktu symetrii prostopadloscianu. </para>        </briefdescription>
+        <detaileddescription>
+<para>Za punkt symetrii przyjeto srodek ciezkosci prostopadloscianu Funkcja to moze byc wykorzystywana do przesuwania wspolrzednych do ukladu wspolrzednych prosotpadloscianu</para><para><simplesect kind="return"><para>Vector3D - punkt symetrii </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kuba/obiekt/DronLvHard/prj/inc/cuboid.hh" line="59" column="1" bodyfile="/home/kuba/obiekt/DronLvHard/prj/src/cuboid.cpp" bodystart="106" bodyend="114"/>
+        <references refid="classfigures3_d_1a491e0281ce1e02aa7159840923cb3ef6" compoundref="figures3_d_8hh" startline="27">figures3D::P</references>
+        <referencedby refid="main_8cpp_1ae6f911847aa1576987a4a55da84635c8" compoundref="main_8cpp" startline="105" endline="166">ChangeOrientation</referencedby>
+        <referencedby refid="class_obstacles_1a51c7f97c28a251ab75d711b23d9fe8e1" compoundref="_obstacles_8hh" startline="22" endline="22">Obstacles::Obstacles</referencedby>
+        <referencedby refid="class_quadracopter_1a9acb965be075b277df0901e99cccfacf" compoundref="_quadracopter_8cpp" startline="46" endline="67">Quadracopter::Quadracopter</referencedby>
+        <referencedby refid="class_quadracopter_1aa1c2a6f507a5bcd7bc37fa5d44a930e5" compoundref="_quadracopter_8cpp" startline="128" endline="138">Quadracopter::MoveSymetry</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Klasa prostopadloscian - jako kadlub dronu. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="0">
+        <label>Cuboid</label>
+        <link refid="class_cuboid"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>figures3D</label>
+        <link refid="classfigures3_d"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Cuboid</label>
+        <link refid="class_cuboid"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>figures3D</label>
+        <link refid="classfigures3_d"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/kuba/obiekt/DronLvHard/prj/inc/cuboid.hh" line="22" column="1" bodyfile="/home/kuba/obiekt/DronLvHard/prj/inc/cuboid.hh" bodystart="22" bodyend="61"/>
+    <listofallmembers>
+      <member refid="class_cuboid_1a1abf60e93d024b7a01ee5b1a48f1f08a" prot="public" virt="non-virtual"><scope>Cuboid</scope><name>Cuboid</name></member>
+      <member refid="class_cuboid_1abd381a00b4e6fd8375b6c801a9380e18" prot="public" virt="non-virtual"><scope>Cuboid</scope><name>Cuboid</name></member>
+      <member refid="class_cuboid_1aeecc4924bc1456780b20c3048e3515f9" prot="public" virt="non-virtual"><scope>Cuboid</scope><name>Cuboid</name></member>
+      <member refid="class_cuboid_1a1bd1aaaa5b60441acf5d75c56a7f3b53" prot="public" virt="non-virtual"><scope>Cuboid</scope><name>GetSymetryPoint</name></member>
+      <member refid="classfigures3_d_1af35b8d1711f6fe2738af86d2641ce5aa" prot="public" virt="non-virtual"><scope>Cuboid</scope><name>operator[]</name></member>
+      <member refid="classfigures3_d_1adee2c4a6f78ee8deb5b57194ef3025d8" prot="public" virt="non-virtual"><scope>Cuboid</scope><name>operator[]</name></member>
+      <member refid="classfigures3_d_1a491e0281ce1e02aa7159840923cb3ef6" prot="protected" virt="non-virtual"><scope>Cuboid</scope><name>P</name></member>
+      <member refid="classfigures3_d_1a630645770668a4a1b35762a311db39b8" prot="public" virt="non-virtual"><scope>Cuboid</scope><name>rotate</name></member>
+      <member refid="classfigures3_d_1a6fddc70b227f21d8c32b0f741b536b05" prot="public" virt="non-virtual"><scope>Cuboid</scope><name>Translate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

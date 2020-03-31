@@ -1,0 +1,136 @@
+\hypertarget{class_obstacles}{}\section{Obstacles Class Reference}
+\label{class_obstacles}\index{Obstacles@{Obstacles}}
+
+
+Klasa modeluje pojecie przeszkody na scenie.  
+
+
+
+
+{\ttfamily \#include $<$Obstacles.\+hh$>$}
+
+Inheritance diagram for Obstacles\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_obstacles}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_obstacles_a51c7f97c28a251ab75d711b23d9fe8e1}{Obstacles} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \hyperlink{class_obstacles}{Obstacles} object. \end{DoxyCompactList}\item 
+\hyperlink{class_obstacles_a28b7f32500e1e58465ef5dc9e2d63ec1}{Obstacles} (\hyperlink{vector3_d_8hh_a8790ef07836c1639da216f46501979c0}{Vector3D} centre, \hyperlink{vector3_d_8hh_a8790ef07836c1639da216f46501979c0}{Vector3D} size)
+\begin{DoxyCompactList}\small\item\em Construct a new \hyperlink{class_obstacles}{Obstacles} object. \end{DoxyCompactList}\item 
+\hyperlink{class_cuboid}{Cuboid} \hyperlink{class_obstacles_aacee9a8a19128a528e2b236485030128}{Get\+Obstacle} ()
+\begin{DoxyCompactList}\small\item\em Dobranie sie do przeszkody. \end{DoxyCompactList}\item 
+bool \hyperlink{class_obstacles_a873ae714db7bf22195867aed06e72227}{If\+Collision} (\hyperlink{vector3_d_8hh_a8790ef07836c1639da216f46501979c0}{Vector3D} Physical\+Point, double radius) const 
+\begin{DoxyCompactList}\small\item\em Sprawdzanie kolizji z obiektami. \end{DoxyCompactList}\item 
+bool \hyperlink{class_obstacles_a41b1c2255c6230514fb6a91afb5f8f7b}{Write\+To\+File} (ofstream \&stream)
+\begin{DoxyCompactList}\small\item\em Zapis przeszkody do pliku. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_cuboid}{Cuboid} \hyperlink{class_obstacles_a524ef2c37e9160887bd20780d68cff76}{cub}
+\begin{DoxyCompactList}\small\item\em Przeszkody sa wizualizowane za pomoca prostopadloscianow. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Obstacles@{Obstacles}!Obstacles@{Obstacles}}
+\index{Obstacles@{Obstacles}!Obstacles@{Obstacles}}
+\subsubsection[{\texorpdfstring{Obstacles()}{Obstacles()}}]{\setlength{\rightskip}{0pt plus 5cm}Obstacles\+::\+Obstacles (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_obstacles_a51c7f97c28a251ab75d711b23d9fe8e1}{}\label{class_obstacles_a51c7f97c28a251ab75d711b23d9fe8e1}
+\index{Obstacles@{Obstacles}!Obstacles@{Obstacles}}
+\index{Obstacles@{Obstacles}!Obstacles@{Obstacles}}
+\subsubsection[{\texorpdfstring{Obstacles(\+Vector3\+D centre, Vector3\+D size)}{Obstacles(Vector3D centre, Vector3D size)}}]{\setlength{\rightskip}{0pt plus 5cm}Obstacles\+::\+Obstacles (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3D}}]{centre, }
+\item[{{\bf Vector3D}}]{size}
+\end{DoxyParamCaption}
+)}\hypertarget{class_obstacles_a28b7f32500e1e58465ef5dc9e2d63ec1}{}\label{class_obstacles_a28b7f32500e1e58465ef5dc9e2d63ec1}
+
+\begin{DoxyParams}{Parameters}
+{\em centre} & -\/ srodek symetrii przeszkody \\
+\hline
+{\em size} & -\/ rozmiary przeszkody \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Obstacles@{Obstacles}!Get\+Obstacle@{Get\+Obstacle}}
+\index{Get\+Obstacle@{Get\+Obstacle}!Obstacles@{Obstacles}}
+\subsubsection[{\texorpdfstring{Get\+Obstacle()}{GetObstacle()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cuboid} Obstacles\+::\+Get\+Obstacle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_obstacles_aacee9a8a19128a528e2b236485030128}{}\label{class_obstacles_aacee9a8a19128a528e2b236485030128}
+
+\begin{DoxyParams}{Parameters}
+{\em Index} & -\/ numer przeszkody \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_cuboid}{Cuboid} -\/ przeszkoda 
+\end{DoxyReturn}
+\index{Obstacles@{Obstacles}!If\+Collision@{If\+Collision}}
+\index{If\+Collision@{If\+Collision}!Obstacles@{Obstacles}}
+\subsubsection[{\texorpdfstring{If\+Collision(\+Vector3\+D Physical\+Point, double radius) const }{IfCollision(Vector3D PhysicalPoint, double radius) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Obstacles\+::\+If\+Collision (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3D}}]{Physical\+Point, }
+\item[{double}]{radius}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_obstacles_a873ae714db7bf22195867aed06e72227}{}\label{class_obstacles_a873ae714db7bf22195867aed06e72227}
+
+\begin{DoxyParams}{Parameters}
+{\em Physical\+Point} & -\/ srodek symetri wybranego drona \\
+\hline
+{\em radius} & -\/ promien walca przyblizajacego \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true -\/ detekcja kolizji 
+
+false -\/ nie ma kolizji 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_object_of_scene_ab58c09e26c9c6016fe86dcbd1b76df00}{Object\+Of\+Scene}.
+
+\index{Obstacles@{Obstacles}!Write\+To\+File@{Write\+To\+File}}
+\index{Write\+To\+File@{Write\+To\+File}!Obstacles@{Obstacles}}
+\subsubsection[{\texorpdfstring{Write\+To\+File(ofstream \&stream)}{WriteToFile(ofstream &stream)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Obstacles\+::\+Write\+To\+File (
+\begin{DoxyParamCaption}
+\item[{ofstream \&}]{stream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_obstacles_a41b1c2255c6230514fb6a91afb5f8f7b}{}\label{class_obstacles_a41b1c2255c6230514fb6a91afb5f8f7b}
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & -\/ strumien do zapisu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true -\/ udany zapis 
+
+false -\/ nieudany zapis 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_object_of_scene_a79bbabdf7e17459475bf30856cf176aa}{Object\+Of\+Scene}.
+
+
+
+\subsection{Member Data Documentation}
+\index{Obstacles@{Obstacles}!cub@{cub}}
+\index{cub@{cub}!Obstacles@{Obstacles}}
+\subsubsection[{\texorpdfstring{cub}{cub}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cuboid} Obstacles\+::cub\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_obstacles_a524ef2c37e9160887bd20780d68cff76}{}\label{class_obstacles_a524ef2c37e9160887bd20780d68cff76}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_obstacles_8hh}{Obstacles.\+hh}\item 
+\hyperlink{_obstacles_8cpp}{Obstacles.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_plant_of_obstacles" kind="class" language="C++" prot="public">
+    <compoundname>PlantOfObstacles</compoundname>
+    <includes refid="_plant_of_obstacles_8hh" local="no">PlantOfObstacles.hh</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_plant_of_obstacles_1aed9fac6bbe259c61e016d1d8ad812b87" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>shared_ptr&lt; <ref refid="class_object_of_scene" kindref="compound">ObjectOfScene</ref> &gt;</type>
+        <definition>shared_ptr&lt; ObjectOfScene &gt; PlantOfObstacles::AddObject</definition>
+        <argsstring>(ID id, Users users) const </argsstring>
+        <name>AddObject</name>
+        <param>
+          <type><ref refid="_plant_of_obstacles_8hh_1a094c367727273b4da2b960ca3b3edc06" kindref="member">ID</ref></type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type><ref refid="_plant_of_obstacles_8hh_1a4c502dc6ce14797e2bb86775ccf09cbf" kindref="member">Users</ref></type>
+          <declname>users</declname>
+        </param>
+        <briefdescription>
+<para>Metoda tworzaca nowy obiekt. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- identyfikator obiektu (Dron lub przeszkoda) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>users</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- uzytkownik ktory tworzy obiekt </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>shared_ptr&lt;ObjectOfScene&gt; - nowy stworzony obiekt zrzutowany na obiekt sceny </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kuba/obiekt/DronLvHard/prj/inc/PlantOfObstacles.hh" line="34" column="1" bodyfile="/home/kuba/obiekt/DronLvHard/prj/src/PlantOfObstacles.cpp" bodystart="4" bodyend="45"/>
+        <references refid="_plant_of_obstacles_8hh_1a094c367727273b4da2b960ca3b3edc06a62256e12fe206e6212239877e25c1c66" compoundref="_plant_of_obstacles_8hh" startline="9">Drone</references>
+        <references refid="_plant_of_obstacles_8hh_1a4c502dc6ce14797e2bb86775ccf09cbfae168fb880dc0042ac28438e1875e41d3" compoundref="_plant_of_obstacles_8hh" startline="15">User</references>
+        <references refid="_plant_of_obstacles_8hh_1a4c502dc6ce14797e2bb86775ccf09cbfac886d5190f68bd172807c62df7a1b536" compoundref="_plant_of_obstacles_8hh" startline="15">Root</references>
+        <references refid="_plant_of_obstacles_8hh_1a094c367727273b4da2b960ca3b3edc06a297b29d409921385e20239f12db235ed" compoundref="_plant_of_obstacles_8hh" startline="9">Obstacle</references>
+        <referencedby refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8cpp" startline="199" endline="462">main</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Klasa modeluje pojecie fabryki obiektow. </para>    </briefdescription>
+    <detaileddescription>
+<para>Tyllko tutaj mozliwe jest tworzenie obiektow klasy przeszkoda oraz dron </para>    </detaileddescription>
+    <location file="/home/kuba/obiekt/DronLvHard/prj/inc/PlantOfObstacles.hh" line="23" column="1" bodyfile="/home/kuba/obiekt/DronLvHard/prj/inc/PlantOfObstacles.hh" bodystart="23" bodyend="36"/>
+    <listofallmembers>
+      <member refid="class_plant_of_obstacles_1aed9fac6bbe259c61e016d1d8ad812b87" prot="public" virt="non-virtual"><scope>PlantOfObstacles</scope><name>AddObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_hex_prism" kind="class" language="C++" prot="public">
+    <compoundname>HexPrism</compoundname>
+    <basecompoundref refid="classfigures3_d" prot="public" virt="non-virtual">figures3D</basecompoundref>
+    <includes refid="_hex_prism_8hh" local="no">HexPrism.hh</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_hex_prism_1a8360fd46ae716c1f5ba97f3213c3d223" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>HexPrism::HexPrism</definition>
+        <argsstring>(double x=0, double y=0, double z=0)</argsstring>
+        <name>HexPrism</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>z</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Stworzenie nowego obiektu z mozliwoscia ustalenia jego polozenia na plaszczyznie xy. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- zmiana polozenia obiektu wedlug osi x </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- zmiana polozenia obiektu wedlug osi y </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kuba/obiekt/DronLvHard/prj/inc/HexPrism.hh" line="41" column="1" bodyfile="/home/kuba/obiekt/DronLvHard/prj/src/HexPrism.cpp" bodystart="5" bodyend="18"/>
+        <references refid="_hex_prism_8hh_1a80499785678dad84e4b1f1828d7f0835" compoundref="_hex_prism_8hh" startline="8">kHexNodes</references>
+        <references refid="classfigures3_d_1a491e0281ce1e02aa7159840923cb3ef6" compoundref="figures3_d_8hh" startline="27">figures3D::P</references>
+      </memberdef>
+      <memberdef kind="function" id="class_hex_prism_1a9684bd167a9dcd710dbe227704bcb786" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="vector3_d_8hh_1a8790ef07836c1639da216f46501979c0" kindref="member">Vector3D</ref></type>
+        <definition>Vector3D HexPrism::GetSymetryPoint</definition>
+        <argsstring>() const </argsstring>
+        <name>GetSymetryPoint</name>
+        <briefdescription>
+<para>Pobranie srodka symetrii graniastoslupa. </para>        </briefdescription>
+        <detaileddescription>
+<para>Metoda przydatna przy przesuwaniu wspolrzednych do ukladu wspolrzednych danego graniastoslupa szesciokatnego</para><para><simplesect kind="return"><para>Vector3D - srodek symetri graniastoslupa </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kuba/obiekt/DronLvHard/prj/inc/HexPrism.hh" line="52" column="1" bodyfile="/home/kuba/obiekt/DronLvHard/prj/src/HexPrism.cpp" bodystart="32" bodyend="41"/>
+        <references refid="classfigures3_d_1a491e0281ce1e02aa7159840923cb3ef6" compoundref="figures3_d_8hh" startline="27">figures3D::P</references>
+      </memberdef>
+      <memberdef kind="function" id="class_hex_prism_1a7d4bf4b9176fbb01146e74875d780626" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HexPrism::rotor</definition>
+        <argsstring>(bool side, Speed speed)</argsstring>
+        <name>rotor</name>
+        <param>
+          <type>bool</type>
+          <declname>side</declname>
+        </param>
+        <param>
+          <type><ref refid="_hex_prism_8hh_1ad57b3fa8e45359906ac229567c209a63" kindref="member">Speed</ref></type>
+          <declname>speed</declname>
+        </param>
+        <briefdescription>
+<para>Rotowanie smigla podczas lotu. </para>        </briefdescription>
+        <detaileddescription>
+<para>Rotujac smiglo najpierw przesuwamy uklad wspolrzednych do ukladu wspolrzednych graniastoskupa szeciokatnego dokonujemy rotacji, a nastepnie przywracamy bazowy uklad wspolrzednych</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>side</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- zmienna pomocna do ustalenia kierunku obrotu [lewo/prawo] </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>speed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- szybkosc obrotu smigla </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/kuba/obiekt/DronLvHard/prj/inc/HexPrism.hh" line="65" column="1" bodyfile="/home/kuba/obiekt/DronLvHard/prj/src/HexPrism.cpp" bodystart="43" bodyend="63"/>
+        <references refid="class_matrix_1a25f743bb00f51eec66fc020f0600b2df" compoundref="matrix_8hh" startline="74" endline="125">Matrix&lt; Dimension &gt;::Type_In</references>
+        <references refid="classfigures3_d_1a491e0281ce1e02aa7159840923cb3ef6" compoundref="figures3_d_8hh" startline="27">figures3D::P</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Klasa modelujaca pojecie graniastoslupow prawidlowych szesciokatnych. </para>    </briefdescription>
+    <detaileddescription>
+<para>Klasa wykorzystywana do sformulowania modelu smigla </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="12">
+        <label>HexPrism</label>
+        <link refid="class_hex_prism"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>figures3D</label>
+        <link refid="classfigures3_d"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="14">
+        <label>HexPrism</label>
+        <link refid="class_hex_prism"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>figures3D</label>
+        <link refid="classfigures3_d"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/kuba/obiekt/DronLvHard/prj/inc/HexPrism.hh" line="31" column="1" bodyfile="/home/kuba/obiekt/DronLvHard/prj/inc/HexPrism.hh" bodystart="31" bodyend="66"/>
+    <listofallmembers>
+      <member refid="class_hex_prism_1a9684bd167a9dcd710dbe227704bcb786" prot="public" virt="non-virtual"><scope>HexPrism</scope><name>GetSymetryPoint</name></member>
+      <member refid="class_hex_prism_1a8360fd46ae716c1f5ba97f3213c3d223" prot="public" virt="non-virtual"><scope>HexPrism</scope><name>HexPrism</name></member>
+      <member refid="classfigures3_d_1af35b8d1711f6fe2738af86d2641ce5aa" prot="public" virt="non-virtual"><scope>HexPrism</scope><name>operator[]</name></member>
+      <member refid="classfigures3_d_1adee2c4a6f78ee8deb5b57194ef3025d8" prot="public" virt="non-virtual"><scope>HexPrism</scope><name>operator[]</name></member>
+      <member refid="classfigures3_d_1a491e0281ce1e02aa7159840923cb3ef6" prot="protected" virt="non-virtual"><scope>HexPrism</scope><name>P</name></member>
+      <member refid="classfigures3_d_1a630645770668a4a1b35762a311db39b8" prot="public" virt="non-virtual"><scope>HexPrism</scope><name>rotate</name></member>
+      <member refid="class_hex_prism_1a7d4bf4b9176fbb01146e74875d780626" prot="public" virt="non-virtual"><scope>HexPrism</scope><name>rotor</name></member>
+      <member refid="classfigures3_d_1a6fddc70b227f21d8c32b0f741b536b05" prot="public" virt="non-virtual"><scope>HexPrism</scope><name>Translate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

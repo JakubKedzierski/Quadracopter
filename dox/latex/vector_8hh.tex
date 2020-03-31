@@ -1,0 +1,104 @@
+\hypertarget{vector_8hh}{}\section{vector.\+hh File Reference}
+\label{vector_8hh}\index{vector.\+hh@{vector.\+hh}}
+
+
+Definicja szablonu Vector$<$$>$  
+
+
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$iomanip$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_vector}{Vector$<$ Typ, Dimension $>$}
+\begin{DoxyCompactList}\small\item\em Pojecie wektora w ukladzie wspolrzednych. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Typ , int Dimension$>$ }\\std\+::istream \& \hyperlink{vector_8hh_adb28a5f78e62e5f765f75b74becdca71}{operator$>$$>$} (std\+::istream \&stream, \hyperlink{class_vector}{Vector}$<$ Typ, Dimension $>$ \&vector)
+\begin{DoxyCompactList}\small\item\em Wczytania wektora translacji. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Typ , int Dimension$>$ }\\std\+::ostream \& \hyperlink{vector_8hh_afeaf8fb8b664587e991dc4bb914aeb27}{operator$<$$<$} (std\+::ostream \&output\+\_\+stream, const \hyperlink{class_vector}{Vector}$<$ Typ, Dimension $>$ \&vector)
+\begin{DoxyCompactList}\small\item\em Wypisanie wspolrzednych wektora. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Typ , int Dimension$>$ }\\std\+::ofstream \& \hyperlink{vector_8hh_ab463ac1a1b292bf5e677d887482e569b}{operator$<$$<$} (std\+::ofstream \&output\+\_\+stream, const \hyperlink{class_vector}{Vector}$<$ Typ, Dimension $>$ \&vector)
+\begin{DoxyCompactList}\small\item\em Zapisanie wspolrzednych do pliku. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Plik zawiera szablon wektora 
+
+\subsection{Function Documentation}
+\index{vector.\+hh@{vector.\+hh}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!vector.\+hh@{vector.\+hh}}
+\subsubsection[{\texorpdfstring{operator$<$$<$(std\+::ostream \&output\+\_\+stream, const Vector$<$ Typ, Dimension $>$ \&vector)}{operator<<(std::ostream &output_stream, const Vector< Typ, Dimension > &vector)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ , int Dimension$>$ std\+::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{output\+\_\+stream, }
+\item[{const {\bf Vector}$<$ Typ, Dimension $>$ \&}]{vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{vector_8hh_afeaf8fb8b664587e991dc4bb914aeb27}{}\label{vector_8hh_afeaf8fb8b664587e991dc4bb914aeb27}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Typ} & -\/ typ wspolrzednych \\
+\hline
+{\em Dimension} & -\/ wymiar wektora \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em output\+\_\+stream} & -\/ stumien do zapisu wspolrzednych \\
+\hline
+{\em vector} & -\/ wyswietlany wektor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::ostream\& -\/ stumien z danymi 
+\end{DoxyReturn}
+\index{vector.\+hh@{vector.\+hh}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!vector.\+hh@{vector.\+hh}}
+\subsubsection[{\texorpdfstring{operator$<$$<$(std\+::ofstream \&output\+\_\+stream, const Vector$<$ Typ, Dimension $>$ \&vector)}{operator<<(std::ofstream &output_stream, const Vector< Typ, Dimension > &vector)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ , int Dimension$>$ std\+::ofstream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\+::ofstream \&}]{output\+\_\+stream, }
+\item[{const {\bf Vector}$<$ Typ, Dimension $>$ \&}]{vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{vector_8hh_ab463ac1a1b292bf5e677d887482e569b}{}\label{vector_8hh_ab463ac1a1b292bf5e677d887482e569b}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Typ} & -\/ typ wspolrzednej \\
+\hline
+{\em Dimension} & -\/ wymiar wektora \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em output\+\_\+stream} & -\/ zwracdany strumien plikowy z danymi \\
+\hline
+{\em vector} & -\/ wektor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::ofstream\& -\/ strumien z danymi 
+\end{DoxyReturn}
+\index{vector.\+hh@{vector.\+hh}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!vector.\+hh@{vector.\+hh}}
+\subsubsection[{\texorpdfstring{operator$>$$>$(std\+::istream \&stream, Vector$<$ Typ, Dimension $>$ \&vector)}{operator>>(std::istream &stream, Vector< Typ, Dimension > &vector)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ , int Dimension$>$ std\+::istream\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{stream, }
+\item[{{\bf Vector}$<$ Typ, Dimension $>$ \&}]{vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{vector_8hh_adb28a5f78e62e5f765f75b74becdca71}{}\label{vector_8hh_adb28a5f78e62e5f765f75b74becdca71}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Typ} & -\/ Typ wspolrzednej \\
+\hline
+{\em Dimension} & -\/ wymiar wektora \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & -\/ stumien do wczytywania \\
+\hline
+{\em vector} & -\/ wektor wczytywany \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::istream\& -\/ zwracamy stumien z wczytanym wektorem 
+\end{DoxyReturn}
