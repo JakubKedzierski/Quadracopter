@@ -1,9 +1,0 @@
-digraph "Quadracopter::ChangeOrientation"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="Quadracopter::ChangeOrientation",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="figures3D::rotate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classfigures3_d.html#a630645770668a4a1b35762a311db39b8",tooltip="Rotacja kazdego punktu nalezacego do figury. "];
-}
